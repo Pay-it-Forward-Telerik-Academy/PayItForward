@@ -11,9 +11,10 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <form runat="server">
@@ -79,8 +80,17 @@
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <div class="clear hideSkiplink">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+                    <asp:Menu ID="NavigationMenu" runat="server" SkipLinkText=""
+                        EnableViewState="False" IncludeStyleBlock="True" Orientation="Horizontal"
+                        DataSourceID="SiteMapDataSource" StaticDisplayLevels="2">
+                    </asp:Menu>
+                    <asp:SiteMapPath ID="SiteMapPathBreadcrump" runat="server" />
+                </div>
             </footer>
         </div>
     </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 </body>
 </html>

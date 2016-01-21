@@ -91,7 +91,7 @@
     <Compile Include="Contracts\ICategoriesService.cs" />
     <Compile Include="Contracts\IStoryService.cs" />
     <Compile Include="Contracts\IUsersService.cs" />
-    <Compile Include="ProjectsService.cs" />
+    <Compile Include="StoryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsersService.cs" />
   </ItemGroup>
