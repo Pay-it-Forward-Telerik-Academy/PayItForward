@@ -431,6 +431,10 @@
       <Project>{292B6628-C1BD-4F14-B5EA-AC06FB53296C}</Project>
       <Name>PayItForward.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Services\PayItForward.Services.Data\PayItForward.Services.Data.csproj">
+      <Project>{621ae641-ed5f-4c3b-a0fa-556ba9544675}</Project>
+      <Name>PayItForward.Services.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -13,6 +13,15 @@ namespace PayItForward.WebForms.Story {
     public partial class CreateStory {
         
         /// <summary>
+        /// multipartrequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm multipartrequest;
+        
+        /// <summary>
         /// ErrorMessage control.
         /// </summary>
         /// <remarks>
@@ -58,13 +67,22 @@ namespace PayItForward.WebForms.Story {
         protected global::System.Web.UI.WebControls.FileUpload Document;
         
         /// <summary>
-        /// Price control.
+        /// GoalAmount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Price;
+        protected global::System.Web.UI.WebControls.TextBox GoalAmount;
+        
+        /// <summary>
+        /// EstimatedDays control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EstimatedDays;
         
         /// <summary>
         /// Description control.

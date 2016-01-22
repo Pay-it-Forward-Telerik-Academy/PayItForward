@@ -1,4 +1,4 @@
-﻿namespace Startkicker.Services.Data
+﻿namespace PayItForward.Services.Data
 {
     using System;
     using System.Collections.Generic;
@@ -7,7 +7,7 @@
     using PayItForward.Data.Models;
     using PayItForward.Data.Repositories;
 
-    using Startkicker.Services.Data.Contracts;
+    using PayItForward.Services.Data.Contracts;
 
     public class StoryService : IStoryService
     {
@@ -41,9 +41,9 @@
         }
 
 
-        public int Add(string title, string description, int goalAmount, int estimatedDays, int categoryId, int userId, string imageUrl)
+        public int Add(string title, string description, int goalAmount, int estimatedDays, int categoryId, string userId, string imageUrl, string documentsUrl)
         {
-            var projectToAdd = new Story
+            var storyToAdd = new Story
             {
                 ExpirationDate = DateTime.Now.AddDays(estimatedDays),
                 Title = title,
@@ -54,13 +54,15 @@
                 ImageUrl = imageUrl,
                 IsRemoved = false,
                 IsClosed = false,
-                CollectedAmount = 0
+                CollectedAmount = 0,
+                DocumentUrl = documentsUrl,
+                IsAccept = false
             };
 
-            this.storyRepo.Add(projectToAdd);
+            this.storyRepo.Add(storyToAdd);
             this.storyRepo.SaveChanges();
 
-            return projectToAdd.Id;
+            return storyToAdd.Id;
         }
 
         public void Update(Story project)
@@ -84,7 +86,7 @@
             this.storyRepo.SaveChanges();
         }
 
-        public int AddMoney(int storyId, int amount, int userId)
+        public int AddMoney(int storyId, int amount, string userId)
         {
             User user = this.usersRepo.GetById(userId);
 

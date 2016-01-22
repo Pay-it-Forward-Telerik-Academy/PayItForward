@@ -1,4 +1,4 @@
-﻿namespace Startkicker.Services.Data.Contracts
+﻿namespace PayItForward.Services.Data.Contracts
 {
     using System.Linq;
     using System.Collections.Generic;
@@ -14,9 +14,9 @@
 
         IQueryable<Story> GetByCategory(string categoryName);
 
-        int Add(string title, string description, int goalMoney, int estimatedDays, int categoryId, int userId, string imageUrl);
+        int Add(string title, string description, int goalMoney, int estimatedDays, int categoryId, string userId, string imageUrl, string documentUrl);
 
-        int AddMoney(int storyId, int amount, int userId);
+        int AddMoney(int storyId, int amount, string userId);
 
         void Update(Story story);
 
