@@ -47,8 +47,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="card col s6">
+            <div class="card-image">
+                <img id="storyImage" runat="server" src="" alt="sample image">
+
+                <span runat="server" class="card-title" id="cardTitle"></span>
+            </div>
+            <div class="card-content">
+                <p runat="server" id="Description"></p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
+        </div>
     </div>
-     <script>
+    <script>
         $(document).ready(function () {
             $('select').material_select();
         });
