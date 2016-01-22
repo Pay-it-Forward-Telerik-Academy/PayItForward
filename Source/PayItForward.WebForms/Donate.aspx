@@ -1,0 +1,56 @@
+﻿<%@ Page Title="Donate" Language="C#"
+    MasterPageFile="~/Site.Master"
+    AutoEventWireup="true"
+    CodeBehind="Donate.aspx.cs"
+    Inherits="PayItForward.WebForms.Donate" %>
+
+<asp:Content ID="Donate" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row">
+        <div class="col s6">
+            <div class="card-panel z-depth-4">
+                <h4>Enter your donation</h4>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="mdi-payment prefix"></i>
+                        <asp:TextBox runat="server" ID="Amount" TextMode="Number" row="3" />
+                        <label for="Amount">Enter your donation</label>
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Amount"
+                            CssClass="text-danger" ErrorMessage="You must fill amout field." />
+                    </div>
+                </div>
+
+                <asp:Label runat="server" AssociatedControlID="DropDownListCountries">Country</asp:Label>
+                <asp:DropDownList ID="DropDownListCountries" runat="server"></asp:DropDownList>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-account-circle prefix"></i>
+                        <asp:TextBox runat="server" ID="Username" CssClass="form-control" TextMode="SingleLine" />
+                        <label for="email">Your Name</label>
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Username"
+                            CssClass="text-danger" ErrorMessage="The email field is required." />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="mdi-communication-email prefix"></i>
+                        <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
+                        <label for="email">Your Email</label>
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                            CssClass="text-danger" ErrorMessage="The email field is required." />
+                    </div>
+                </div>
+
+                <div class="center">
+                    <asp:Button runat="server" OnClick="CreateDonation" Text="Donate" CssClass="waves-effect waves-light btn" />
+                </div>
+            </div>
+        </div>
+    </div>
+     <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+</asp:Content>
