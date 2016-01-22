@@ -44,6 +44,10 @@
 
         public bool IsClosed { get; set; }
 
+        public bool IsAccept { get; set; }
+
+        public string DocumentUrl { get; set; }
+
         public virtual ICollection<Comment> Comments
         {
             get
@@ -68,6 +72,5 @@
                 this.donations = value;
             }
         }
-
     }
 }
