@@ -34,21 +34,21 @@ namespace PayItForward.WebForms.Story
         protected void OnCreateStoryButtonClicked(object sender, EventArgs e)
         {
             string userId = User.Identity.GetUserId();
-            string imageUrl="";
-            string documentUrl="";
+            string imageUrl = "";
+            string documentUrl = "";
 
             if (Image.HasFile)
             {
                 string filename = Path.GetFileName(Image.FileName);
-                imageUrl = Server.MapPath("~/App_Data/Images/") + filename;
-                Image.SaveAs(imageUrl);
+                imageUrl = "../Resources/Images/" + filename;
+                Image.SaveAs(Server.MapPath("~/Resources/Images/") + filename);
             }
 
             if (Document.HasFile)
             {
                 string filename = Path.GetFileName(Document.FileName);
-                documentUrl = Server.MapPath("~/App_Data/Documents/") + filename;
-                Document.SaveAs(documentUrl);
+                documentUrl = "../Resources/Documents/" + filename;
+                Document.SaveAs(Server.MapPath("~/Resources/Documents/") + filename);
             }
 
             stories.Add(this.TitleStory.Text, this.Description.Text, int.Parse(this.GoalAmount.Text), int.Parse(this.EstimatedDays.Text), int.Parse(this.DropDownListCategories.SelectedValue), userId, imageUrl, documentUrl);
