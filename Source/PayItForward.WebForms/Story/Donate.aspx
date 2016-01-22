@@ -11,7 +11,7 @@
                 <h4>Enter your donation</h4>
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="mdi-payment prefix"></i>
+                        <i class="material-icons prefix">payment</i>
                         <asp:TextBox runat="server" ID="Amount" TextMode="Number" row="3" />
                         <label for="Amount">Enter your donation</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Amount"
@@ -48,14 +48,22 @@
             </div>
         </div>
 
-        <div class="card col s6">
+        <div class="card col s6 card-panel z-depth-4">
             <div class="card-image">
-                <img id="storyImage" runat="server" src="" alt="sample image">
+                <img id="storyImage" runat="server" alt="sample image">
 
                 <span runat="server" class="card-title" id="cardTitle"></span>
             </div>
             <div class="card-content">
                 <p runat="server" id="Description"></p>
+            </div>
+            <div class="center">
+                <span id="collectedAmount" runat="server"></span>
+                <span> of </span>
+                <span id="goalAmount" runat="server"></span>
+            </div>
+            <div class="progress">
+                <div class="determinate" id="progressBar" runat="server" style="width: 70%"></div>
             </div>
             <div class="card-action">
                 <a href="#">This is a link</a>

@@ -13,14 +13,14 @@ namespace PayItForward.WebForms
     public partial class Donate : System.Web.UI.Page
     {
         [Inject]
-        public ICategoriesService categories { get; set; }
+        public IDonationService donations { get; set; }
         [Inject]
         public IStoryService stories { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             var countries = Common.Countries.GetAllCountries();
-            var story = this.stories.GetById(1).FirstOrDefault();
+            var story = this.stories.GetById(2).FirstOrDefault();
 
             this.DropDownListCountries.DataSource = countries;
             this.DropDownListCountries.DataBind();
@@ -34,11 +34,23 @@ namespace PayItForward.WebForms
             this.storyImage.Src = story.ImageUrl;
             this.cardTitle.InnerText = story.Title;
             this.Description.InnerText = story.Description;
+
+            var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
+            this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
+            this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
+
+            this.progressBar.Style.Add("width", percentage.ToString() + "%");
         }
 
         protected void CreateDonation(object sender, EventArgs e)
         {
+            this.donations.Add(User.Identity.GetUserId(), 2, int.Parse(this.Amount.Text), this.DropDownListCountries.SelectedItem.Text);
+        }
 
+        protected double CalculatePercentage(double collected, double goal)
+        {
+            var percentage = (collected / goal) * 100;
+            return percentage;
         }
     }
 }
