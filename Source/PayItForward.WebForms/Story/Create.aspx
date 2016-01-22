@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Create new story" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="CreateStory.aspx.cs" Inherits="PayItForward.WebForms.Story.CreateStory" %>
+﻿<%@ Page Title="Create new story" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Create.aspx.cs" Inherits="PayItForward.WebForms.Story.CreateStory" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
