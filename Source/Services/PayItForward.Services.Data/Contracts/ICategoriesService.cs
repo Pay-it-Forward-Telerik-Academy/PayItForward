@@ -1,4 +1,4 @@
-﻿namespace Startkicker.Services.Data.Contracts
+﻿namespace PayItForward.Services.Data.Contracts
 {
     using System.Linq;
 

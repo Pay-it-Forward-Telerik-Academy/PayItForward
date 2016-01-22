@@ -1,11 +1,11 @@
-﻿namespace Startkicker.Services.Data
+﻿namespace PayItForward.Services.Data
 {
     using System.Linq;
 
     using PayItForward.Data.Models;
     using PayItForward.Data.Repositories;
 
-    using Startkicker.Services.Data.Contracts;
+    using PayItForward.Services.Data.Contracts;
 
     public class UsersService : IUsersService
     {
