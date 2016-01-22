@@ -14,9 +14,9 @@ namespace PayItForward.WebForms.Story
     public partial class CreateStory : Ninject.Web.PageBase
     {
         [Inject]
-        private ICategoriesService categories;
+        public ICategoriesService categories { get; set; }
         [Inject]
-        private IStoryService stories;
+        public IStoryService stories { get; set; }
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -25,9 +25,6 @@ namespace PayItForward.WebForms.Story
             {
                 var allCategories = categories.GetAll().ToList();
                 this.DropDownListCategories.DataSource = allCategories;
-                this.DropDownListCategories.DataTextField = "Name";
-                this.DropDownListCategories.DataValueField = "Id";
-
                 this.DropDownListCategories.DataBind();
                 this.DropDownListCategories.SelectedIndex = 0;
 
@@ -43,18 +40,18 @@ namespace PayItForward.WebForms.Story
             if (Image.HasFile)
             {
                 string filename = Path.GetFileName(Image.FileName);
-                imageUrl = Server.MapPath("~/Images/") + filename;
+                imageUrl = Server.MapPath("~/App_Data/Images/") + filename;
                 Image.SaveAs(imageUrl);
             }
 
             if (Document.HasFile)
             {
                 string filename = Path.GetFileName(Document.FileName);
-                documentUrl = Server.MapPath("~/Documents/") + filename;
+                documentUrl = Server.MapPath("~/App_Data/Documents/") + filename;
                 Document.SaveAs(documentUrl);
             }
 
-            stories.Add(this.Title.Text, this.Description.Text, int.Parse(this.GoalAmount.Text), int.Parse(this.EstimatedDays.Text), int.Parse(this.DropDownListCategories.SelectedValue), userId, imageUrl, documentUrl);
+            stories.Add(this.TitleStory.Text, this.Description.Text, int.Parse(this.GoalAmount.Text), int.Parse(this.EstimatedDays.Text), int.Parse(this.DropDownListCategories.SelectedValue), userId, imageUrl, documentUrl);
 
         }
     }

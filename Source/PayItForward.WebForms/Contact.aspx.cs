@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
 
 namespace PayItForward.WebForms
 {
@@ -11,7 +12,6 @@ namespace PayItForward.WebForms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
