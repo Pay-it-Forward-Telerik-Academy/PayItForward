@@ -20,3 +20,5 @@ input[type="tel"],
 input[type="select"] {
     max-width: 280px;
 }
+
+.crop {width:90%;overflow:hidden;height:50%;}

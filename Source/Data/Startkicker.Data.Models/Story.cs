@@ -30,6 +30,8 @@
 
         public double GoalAmount { get; set; }
 
+        public DateTime PostDate { get; set; }
+
         public DateTime ExpirationDate { get; set; }
 
         public bool IsRemoved { get; set; }

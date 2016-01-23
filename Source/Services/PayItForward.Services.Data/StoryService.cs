@@ -36,8 +36,7 @@
 
         public IQueryable<Story> GetAll()
         {
-            return this.storyRepo.All().Where(x => (!x.IsRemoved)).OrderByDescending(c => c.Title);
-
+            return this.storyRepo.All().Where(x => (!x.IsRemoved) && (x.IsAccept));
         }
 
 
@@ -56,7 +55,8 @@
                 IsClosed = false,
                 CollectedAmount = 0,
                 DocumentUrl = documentsUrl,
-                IsAccept = false
+                IsAccept = false,
+                PostDate = DateTime.Now
             };
 
             this.storyRepo.Add(storyToAdd);
