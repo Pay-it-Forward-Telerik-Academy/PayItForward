@@ -12,29 +12,65 @@
                         <asp:Image ID="imageStory" runat="server" Width="100%" />
                     </div>
                     <div class="card-content">
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server" class="panel"
+                            UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <div class="col s3">
+                                    <asp:LinkButton ID="likeButton" OnClick="OnAddLike"
+                                        runat="server">
+                                        <span class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
+                                            <i class="mdi-action-favorite" style="position: relative"></i><small id="likes" runat="server" style="position: absolute; left: 11px; top: 1px; color: #26A69A;">10</small>
+                                        </span>
+                                    </asp:LinkButton>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
                         <div class="col s6">
-                            <span id="likes" runat="server"></span>
-                            <asp:LinkButton ID="likeButton"
-                                runat="server">
-                                    <span><i class="small material-icons">thumb_up</i></span>
-                            </asp:LinkButton>
-                        </div>
-                        <div class="col s6"><span class="activator blue-text text-darken-2"><i class="material-icons dp48">chat_bubble_outline</i></span></div>
+                            <span class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
+                                            <small id="Small1" runat="server" style="position: absolute; left: 11px; top: 1px; color: white;">View</small>
+                                        </span>
+                            <span class="activator blue-text text-darken-2"><i class="material-icons dp48">chat_bubble_outline</i></span></div>
                     </div>
                     <div class="card-reveal" style="display: none; transform: translateY(0px);">
                         <span class="card-title grey-text text-darken-4">Comments<i class="material-icons right">close</i></span>
-                        <p class="triangle-right">This only needs one HTML element.</p>
-                        <asp:Repeater ID="CommentsRepeater" runat="server">
-                            <ItemTemplate>
-                        <p class="triangle-right"><%#: Eval("Context") %></p>
-                                </ItemTemplate>
-                        </asp:Repeater>
+                        <asp:UpdatePanel ID="UpdatePanelFavoriteDrink" runat="server" class="panel"
+                            UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <ul class="collapsible popout collapsible-accordion" data-collapsible="accordion">
+                                    <asp:Repeater ID="CommentsRepeater" runat="server">
+                                        <ItemTemplate>
+                                            <li class="">
+                                                <div class="collapsible-header"><i class="material-icons">library_books</i><%#: Eval("User.Email") %></div>
+                                                <div class="collapsible-body" style="display: none;">
+                                                    <p><%#: Eval("Context") %> </p>
+                                                </div>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                                <div class="row">
+
+                                    <div class="col s12 fixed-bottom">
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input runat="server" id="comment" type="text">
+                                                <label for="email" data-error="wrong" data-success="right">Comment</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <asp:LinkButton CssClass="btn btn-default" OnClick="OnAddComment" ID="addComment" runat="server">Add Comment</asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
                     </div>
                 </div>
             </div>
             <div class="col s6 ">
-                <div class="card  light-blue">
-                    <div class="card-content white-text">
+                <div class="card">
+                    <div class="card-content grey-text">
                         <span class="card-title">Description</span>
                         <p id="storyDescription" runat="server"></p>
                         <div class="center">

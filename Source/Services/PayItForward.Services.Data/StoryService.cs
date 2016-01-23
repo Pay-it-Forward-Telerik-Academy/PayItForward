@@ -136,5 +136,19 @@
                 .ToList()
                 .AsQueryable();
         }
+
+        public Story AddLike(int storyId)
+        {
+            Story storyToUpdate = this.storyRepo.GetById(storyId);
+            if (storyToUpdate == null)
+            {
+                throw new ArgumentOutOfRangeException("Could not find the project. Make sure the ID is correct!");
+            }
+
+            storyToUpdate.Likes++;
+            this.storyRepo.Update(storyToUpdate);
+            this.storyRepo.SaveChanges();
+            return storyToUpdate;
+        }
     }
 }

@@ -14,12 +14,15 @@
     {
         private ICollection<Donation> donations;
 
-        private ICollection<Story> stories; 
+        private ICollection<Story> stories;
+
+        private ICollection<Comment> comments;
 
         public User()
         {
             this.donations = new HashSet<Donation>();
             this.stories = new HashSet<Story>();
+            this.comments = new HashSet<Comment>();
         }
 
         [MaxLength(50)]
@@ -59,7 +62,18 @@
                 this.donations = value;
             }
         }
+        public virtual ICollection<Comment> Comments
+        {
+            get
+            {
+                return this.comments;
+            }
 
+            set
+            {
+                this.comments = value;
+            }
+        }
         public ClaimsIdentity GenerateUserIdentity(UserManager<User> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

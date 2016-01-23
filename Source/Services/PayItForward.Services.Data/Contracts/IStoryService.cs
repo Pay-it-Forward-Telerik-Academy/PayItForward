@@ -27,5 +27,7 @@
         void RemoveById(int id);
 
         void Save();
+
+        Story AddLike(int storyId);
     }
 }

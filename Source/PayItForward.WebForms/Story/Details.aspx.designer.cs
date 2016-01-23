@@ -31,13 +31,13 @@ namespace PayItForward.WebForms.Story {
         protected global::System.Web.UI.WebControls.Image imageStory;
         
         /// <summary>
-        /// likes control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl likes;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
         /// likeButton control.
@@ -49,6 +49,24 @@ namespace PayItForward.WebForms.Story {
         protected global::System.Web.UI.WebControls.LinkButton likeButton;
         
         /// <summary>
+        /// likes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl likes;
+        
+        /// <summary>
+        /// UpdatePanelFavoriteDrink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanelFavoriteDrink;
+        
+        /// <summary>
         /// CommentsRepeater control.
         /// </summary>
         /// <remarks>
@@ -56,6 +74,24 @@ namespace PayItForward.WebForms.Story {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater CommentsRepeater;
+        
+        /// <summary>
+        /// comment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText comment;
+        
+        /// <summary>
+        /// addComment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton addComment;
         
         /// <summary>
         /// storyDescription control.
