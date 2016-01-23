@@ -21,6 +21,9 @@ input[type="select"] {
     max-width: 280px;
 }
 
+.text-danger{
+    color: red;
+}
 .triangle-right {
     position: relative;
     padding: 15px;

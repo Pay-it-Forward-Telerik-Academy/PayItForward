@@ -190,11 +190,14 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Resources\Images\lion-photo.jpg" />
+    <Content Include="Resources\Images\SPA.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Story\Donate.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -207,6 +210,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -382,6 +386,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Story\Donate.aspx.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Story\Donate.aspx.designer.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -427,8 +438,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Resources\Documents\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common\Common.csproj">
+      <Project>{40c88247-eb1f-4393-8ce5-0e38bb1eb8cf}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Startkicker.Data.Models\PayItForward.Data.Models.csproj">
       <Project>{74c0976c-f6ce-4d7d-a997-9d218cd18028}</Project>
       <Name>PayItForward.Data.Models</Name>
