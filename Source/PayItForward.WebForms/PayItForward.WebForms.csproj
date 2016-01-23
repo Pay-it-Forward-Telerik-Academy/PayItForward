@@ -191,6 +191,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Administration\AdminPanel.aspx" />
+    <Content Include="Administration\StoriesApproval.aspx" />
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="Resources\Images\lion-photo.jpg" />
@@ -200,6 +201,7 @@
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Story\Details.aspx" />
     <Content Include="Story\Donate.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -378,6 +380,13 @@
     <Compile Include="Administration\AdminPanel.aspx.designer.cs">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\StoriesApproval.aspx.cs">
+      <DependentUpon>StoriesApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\StoriesApproval.aspx.designer.cs">
+      <DependentUpon>StoriesApproval.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administration\StoriesPanel.aspx.cs">
       <DependentUpon>StoriesPanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -412,6 +421,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Story\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Story\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Story\Donate.aspx.cs">
       <DependentUpon>Donate.aspx</DependentUpon>

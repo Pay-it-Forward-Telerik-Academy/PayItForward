@@ -10,7 +10,7 @@
 namespace PayItForward.WebForms.Administration {
     
     
-    public partial class StoriesPanel {
+    public partial class StoriesApproval {
         
         /// <summary>
         /// UpdateGridPanel control.

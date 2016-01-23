@@ -40,12 +40,15 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class ="col offset-s3 s3 offset-s3">
+        <div class="row center">
+            <div class="col offset-l1 s3">
                 <a href="UsersPanel.aspx" class="waves-effect waves-light btn-large"><i class="material-icons left">perm_identity</i>Users</a>
             </div>
-             <div class ="col s3">
-                <a class="waves-effect waves-light btn-large"><i class="material-icons left">description</i>Stories</a>
+            <div class="col s4">
+                <a href="StoriesApproval.aspx" class="waves-effect waves-light btn-large"><i class="material-icons left">done</i>Stories Approval</a>
+            </div>
+            <div class="col s3">
+                <a href="StoriesPanel.aspx" class="waves-effect waves-light btn-large"><i class="material-icons left">description</i>Stories</a>
             </div>
         </div>
     </div>

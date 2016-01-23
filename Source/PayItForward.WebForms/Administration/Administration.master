@@ -5,8 +5,8 @@
     Inherits="PayItForward.WebForms.Administration.Administration" %>
     
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <div class="card-panel hoverable">
-            <h3 class="center">Welcome to Admin Panel!</h3>
+        <div class="card-panel hoverable  deep-purple lighten-3">
+            <h4 class="center ">Admin Panel</h4>
         </div>
     <asp:ContentPlaceHolder ID="AdminContent" runat="server">
     </asp:ContentPlaceHolder>
