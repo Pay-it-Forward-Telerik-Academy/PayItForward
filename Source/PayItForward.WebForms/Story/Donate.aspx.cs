@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using PayItForward.Services.Data.Contracts;
 using Ninject;
+using System.Web.Security;
 
 namespace PayItForward.WebForms
 {
@@ -16,6 +17,8 @@ namespace PayItForward.WebForms
         public IDonationService donations { get; set; }
         [Inject]
         public IStoryService stories { get; set; }
+        [Inject]
+        public IUsersService users { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,8 +33,10 @@ namespace PayItForward.WebForms
                 this.Username.Enabled = false;
                 this.Email.Enabled = false;
 
-                this.Username.Text = User.Identity.GetUserName();
-                this.Email.Text = User.Identity.GetUserName();
+                var currentUser = this.users.GetById(User.Identity.GetUserId());
+
+                this.Username.Text = currentUser.UserName;
+                this.Email.Text = currentUser.Email;
 
                 this.storyImage.Src = story.ImageUrl;
                 this.cardTitle.InnerText = story.Title;
