@@ -15,7 +15,7 @@
                         <asp:TextBox runat="server" ID="Amount" TextMode="Number" row="3" />
                         <label for="Amount">Enter your donation</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Amount"
-                            CssClass="text-danger" ErrorMessage="You must fill amout field." />
+                            ForeColor="Red" ErrorMessage="You must fill amout field." />
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@
                         <asp:TextBox runat="server" ID="Username" CssClass="form-control" TextMode="SingleLine" />
                         <label for="email">Your Name</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Username"
-                            CssClass="text-danger" ErrorMessage="The email field is required." />
+                            ForeColor="Red" ErrorMessage="The email field is required." />
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                         <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                         <label for="email">Your Email</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                            CssClass="text-danger" ErrorMessage="The email field is required." />
+                           ForeColor="Red" ErrorMessage="The email field is required." />
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
                 <span id="goalAmount" runat="server"></span>
             </div>
             <div class="progress">
-                <div class="determinate" id="progressBar" runat="server" style="width: 70%"></div>
+                <div class="determinate" id="progressBar" runat="server"></div>
             </div>
             <div class="card-action">
                 <a href="#">This is a link</a>
