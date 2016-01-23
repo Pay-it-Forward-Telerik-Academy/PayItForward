@@ -8,7 +8,7 @@
 
     public interface IStoryService
     {
-        IQueryable<Story> GetById(int id);
+        Story GetById(int id);
 
         IQueryable<Story> GetAll();
 
@@ -23,5 +23,7 @@
         void Remove(Story story);
 
         void RemoveById(int id);
+
+        void Save();
     }
 }

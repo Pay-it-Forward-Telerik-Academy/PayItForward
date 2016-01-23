@@ -45,7 +45,7 @@
                 <a href="UsersPanel.aspx" class="waves-effect waves-light btn-large"><i class="material-icons left">perm_identity</i>Users</a>
             </div>
              <div class ="col s3">
-                <a class="waves-effect waves-light btn-large"><i class="material-icons left">description</i>Stories</a>
+                <a href="StoriesPanel.aspx" class="waves-effect waves-light btn-large"><i class="material-icons left">description</i>Stories</a>
             </div>
         </div>
     </div>

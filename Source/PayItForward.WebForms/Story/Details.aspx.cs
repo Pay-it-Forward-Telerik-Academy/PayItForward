@@ -18,7 +18,7 @@ namespace PayItForward.WebForms.Story
             {
                 //int storyId = int.Parse(this.Request.QueryString["id"]);
                 int storyId = 2;
-                var story = stories.GetById(storyId).FirstOrDefault();
+                var story = stories.GetById(storyId);
                 this.storyTitle.InnerText = story.Title;
                 this.imageStory.ImageUrl = story.ImageUrl;
                 this.storyDescription.InnerText = story.Description;

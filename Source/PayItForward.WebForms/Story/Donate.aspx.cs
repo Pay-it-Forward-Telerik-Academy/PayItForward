@@ -22,7 +22,7 @@ namespace PayItForward.WebForms
             if (!this.IsPostBack)
             {
                 var countries = Common.Countries.GetAllCountries();
-                var story = this.stories.GetById(2).FirstOrDefault();
+                var story = this.stories.GetById(2);
 
                 this.DropDownListCountries.DataSource = countries;
                 this.DropDownListCountries.DataBind();
