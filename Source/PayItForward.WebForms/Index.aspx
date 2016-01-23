@@ -30,29 +30,33 @@
                     <div class="row">
                         <div class="col s12">
                             <%--<asp:Button ID="Button1" CssClass="waves-effect waves-light  btn" runat="server" Text="Latest"><i class="mdi-action-3d-rotation left"></i></asp:Button>--%>
-
-                            <asp:LinkButton runat="server" OnClick="OnLatestStoryButtonClicked" CssClass="waves-effect waves-light  btn">
+                            <div class="col s3">
+                                <asp:LinkButton runat="server" OnClick="OnLatestStoryButtonClicked" CssClass="waves-effect waves-light  btn">
                 <i class="mdi-action-autorenew left"></i>
                 Latest Stories
-                            </asp:LinkButton>
-
-                            <%--<button runat="server" OnClick="OnLatestStoryButtonClicked" class="waves-effect waves-light  btn"><i class="mdi-action-autorenew left"></i>Latest</button>--%>
-                            <asp:LinkButton runat="server" OnClick="OnMostPopularStoryButtonClicked" CssClass="waves-effect waves-light  btn">
+                                </asp:LinkButton>
+                            </div>
+                            <div class="col s3">
+                                <%--<button runat="server" OnClick="OnLatestStoryButtonClicked" class="waves-effect waves-light  btn"><i class="mdi-action-autorenew left"></i>Latest</button>--%>
+                                <asp:LinkButton runat="server" OnClick="OnMostPopularStoryButtonClicked" CssClass="waves-effect waves-light  btn">
                 <i class="mdi-action-favorite-outline left"></i>
                 Most Popular Stories
-                            </asp:LinkButton>
-
-                            <asp:LinkButton runat="server" OnClick="OnAlmostThereStoryButtonClicked" CssClass="waves-effect waves-light  btn">
+                                </asp:LinkButton>
+                            </div>
+                            <div class="col s3">
+                                <asp:LinkButton runat="server" OnClick="OnAlmostThereStoryButtonClicked" CssClass="waves-effect waves-light  btn">
                 <i class="mdi-editor-insert-emoticon left"></i>
                 Almost There
-                            </asp:LinkButton>
-
-                            <asp:LinkButton runat="server" OnClick="OnCriticalStoryButtonClicked" CssClass="waves-effect waves-light  btn">
+                                </asp:LinkButton>
+                            </div>
+                            <div class="col s3">
+                                <asp:LinkButton runat="server" OnClick="OnCriticalStoryButtonClicked" CssClass="waves-effect waves-light  btn">
                 <i class="mdi-content-add-circle-outline left"></i>
                 Critical Stories
-                            </asp:LinkButton>
+                                </asp:LinkButton>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                     <div class="row">
                         <div class="col s12">
                             <div class="card-panel z-depth-4">
