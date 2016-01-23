@@ -190,6 +190,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Administration\AdminPanel.aspx" />
+    <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="Resources\Images\lion-photo.jpg" />
     <Content Include="Resources\Images\SPA.png" />
     <Content Include="Content\bootstrap.css" />
@@ -203,6 +205,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Administration\Administration.master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Resources\Documents\goran.jpg" />
     <Content Include="Resources\Images\goran.jpg" />
@@ -364,6 +367,27 @@
     </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Administration.master.cs">
+      <DependentUpon>Administration.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Administration.master.designer.cs">
+      <DependentUpon>Administration.master</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AdminPanel.aspx.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AdminPanel.aspx.designer.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\UsersPanel.aspx.cs">
+      <DependentUpon>UsersPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\UsersPanel.aspx.designer.cs">
+      <DependentUpon>UsersPanel.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

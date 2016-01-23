@@ -22,7 +22,7 @@ input[type="select"] {
 }
 
 .text-danger{
-    color: red;
+    text-decoration: underline;
 }
 .triangle-right {
     position: relative;

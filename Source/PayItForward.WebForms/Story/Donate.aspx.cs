@@ -19,27 +19,30 @@ namespace PayItForward.WebForms
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var countries = Common.Countries.GetAllCountries();
-            var story = this.stories.GetById(2).FirstOrDefault();
+            if (!this.IsPostBack)
+            {
+                var countries = Common.Countries.GetAllCountries();
+                var story = this.stories.GetById(2).FirstOrDefault();
 
-            this.DropDownListCountries.DataSource = countries;
-            this.DropDownListCountries.DataBind();
+                this.DropDownListCountries.DataSource = countries;
+                this.DropDownListCountries.DataBind();
 
-            this.Username.Enabled = false;
-            this.Email.Enabled = false;
+                this.Username.Enabled = false;
+                this.Email.Enabled = false;
 
-            this.Username.Text = User.Identity.GetUserName();
-            this.Email.Text = User.Identity.GetUserName();
+                this.Username.Text = User.Identity.GetUserName();
+                this.Email.Text = User.Identity.GetUserName();
 
-            this.storyImage.Src = story.ImageUrl;
-            this.cardTitle.InnerText = story.Title;
-            this.Description.InnerText = story.Description;
+                this.storyImage.Src = story.ImageUrl;
+                this.cardTitle.InnerText = story.Title;
+                this.Description.InnerText = story.Description;
 
-            var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
-            this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
-            this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
+                var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
+                this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
+                this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
 
-            this.progressBar.Style.Add("width", percentage.ToString() + "%");
+                this.progressBar.Style.Add("width", percentage.ToString() + "%");
+            }
         }
 
         protected void CreateDonation(object sender, EventArgs e)
