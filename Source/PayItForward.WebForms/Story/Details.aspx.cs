@@ -21,7 +21,10 @@ namespace PayItForward.WebForms.Story
             if (!Page.IsPostBack)
             {
                 //int storyId = int.Parse(this.Request.QueryString["id"]);
-                int storyId = 1;
+                int storyId;
+
+                int.TryParse(Request.QueryString["id"], out storyId);
+
                 var story = stories.GetById(storyId);
                 this.storyTitle.InnerText = story.Title;
                 this.imageStory.ImageUrl = story.ImageUrl;
@@ -45,8 +48,9 @@ namespace PayItForward.WebForms.Story
 
         protected void OnAddComment(object sender, EventArgs e)
         {
-            //int storyId = int.Parse(this.Request.QueryString["id"]);
-            int storyId = 1;
+            int storyId;
+
+            int.TryParse(Request.QueryString["id"], out storyId);
             this.comments.Add(User.Identity.GetUserId(), storyId, this.comment.Value.ToString());
             var story = stories.GetById(storyId);
             this.CommentsRepeater.DataSource = story.Comments.ToList();
@@ -55,8 +59,9 @@ namespace PayItForward.WebForms.Story
 
         protected void OnAddLike(object sender, EventArgs e)
         {
-            //int storyId = int.Parse(this.Request.QueryString["id"]);
-            int storyId = 1;
+            int storyId;
+
+            int.TryParse(Request.QueryString["id"], out storyId);
             var story = this.stories.AddLike(storyId);
             this.likes.InnerText = story.Likes.ToString();
         }

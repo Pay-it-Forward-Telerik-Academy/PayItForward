@@ -38,3 +38,5 @@ input[type="select"] {
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+.crop {width:90%;overflow:hidden;height:50%;}

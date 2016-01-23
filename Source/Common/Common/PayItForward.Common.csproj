@@ -7,8 +7,8 @@
     <ProjectGuid>{40C88247-EB1F-4393-8CE5-0E38BB1EB8CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
+    <RootNamespace>PayItForward.Common</RootNamespace>
+    <AssemblyName>PayItForward.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

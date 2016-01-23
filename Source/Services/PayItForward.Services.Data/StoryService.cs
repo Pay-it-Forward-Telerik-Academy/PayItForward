@@ -56,7 +56,8 @@
                 IsClosed = false,
                 CollectedAmount = 0,
                 DocumentUrl = documentsUrl,
-                IsAccept = false
+                IsAccept = false,
+                PostDate = DateTime.Now
             };
 
             this.storyRepo.Add(storyToAdd);

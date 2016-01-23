@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using PayItForward.Services.Data.Contracts;
 using Ninject;
+using PayItForward.Common;
 
 namespace PayItForward.WebForms
 {
@@ -21,7 +22,7 @@ namespace PayItForward.WebForms
         {
             if (!this.IsPostBack)
             {
-                var countries = Common.Countries.GetAllCountries();
+                var countries = Countries.GetAllCountries();
                 var story = this.stories.GetById(2);
 
                 this.DropDownListCountries.DataSource = countries;

@@ -1,4 +1,4 @@
-﻿namespace Common
+﻿namespace PayItForward.Common
 {
     using System.Collections;
     using System.Collections.Generic;

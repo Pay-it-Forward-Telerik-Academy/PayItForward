@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{188B7903-8BB6-489E-869B-FAF8CEF5EC43}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayItForward.Services.Data"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{98C569C5-EAAF-4D55-A1CD-8DC864C34197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common\Common.csproj", "{40C88247-EB1F-4393-8CE5-0E38BB1EB8CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayItForward.Common", "Common\Common\PayItForward.Common.csproj", "{40C88247-EB1F-4393-8CE5-0E38BB1EB8CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

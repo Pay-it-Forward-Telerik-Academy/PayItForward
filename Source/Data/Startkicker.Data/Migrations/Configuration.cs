@@ -1,5 +1,6 @@
 namespace PayItForward.Data.Migrations
 {
+    using System.Collections.Generic;
     using System.Data.Entity.Migrations;
     using System.Linq;
     using PayItForward.Data;
@@ -28,6 +29,7 @@ namespace PayItForward.Data.Migrations
                 context.Categories.Add(new Category { IsRemoved = false, Name = "Other" });
                 context.SaveChanges();
             }
+           
         }
     }
 }
