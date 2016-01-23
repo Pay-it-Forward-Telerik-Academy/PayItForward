@@ -191,6 +191,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Administration\AdminPanel.aspx" />
+    <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="Resources\Images\lion-photo.jpg" />
     <Content Include="Resources\Images\SPA.png" />
@@ -207,8 +208,6 @@
     <Content Include="Account\Web.config" />
     <Content Include="Administration\Administration.master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Resources\Documents\goran.jpg" />
-    <Content Include="Resources\Images\goran.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -244,12 +243,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="Story\Create.aspx" />
-    <Content Include="Story\Details.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
-    <Content Include="Bundle.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -382,6 +378,13 @@
     <Compile Include="Administration\AdminPanel.aspx.designer.cs">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\StoriesPanel.aspx.cs">
+      <DependentUpon>StoriesPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\StoriesPanel.aspx.designer.cs">
+      <DependentUpon>StoriesPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administration\UsersPanel.aspx.cs">
       <DependentUpon>UsersPanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -443,13 +446,6 @@
     </Compile>
     <Compile Include="Story\Create.aspx.designer.cs">
       <DependentUpon>Create.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Story\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Story\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
