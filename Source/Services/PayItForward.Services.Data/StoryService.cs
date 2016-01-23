@@ -128,5 +128,13 @@
         {
             this.storyRepo.SaveChanges();
         }
+
+        public IQueryable<Story> GetNotApproved()
+        {
+            return this.storyRepo.All()
+                .Where(x => !x.IsAccept && !x.IsRemoved)
+                .ToList()
+                .AsQueryable();
+        }
     }
 }

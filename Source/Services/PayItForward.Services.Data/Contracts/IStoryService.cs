@@ -10,6 +10,8 @@
     {
         Story GetById(int id);
 
+        IQueryable<Story> GetNotApproved();
+
         IQueryable<Story> GetAll();
 
         IQueryable<Story> GetByCategory(string categoryName);

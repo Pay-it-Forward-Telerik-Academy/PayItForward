@@ -191,6 +191,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Administration\AdminPanel.aspx" />
+    <Content Include="Administration\StoriesApproval.aspx" />
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="Resources\Images\lion-photo.jpg" />
@@ -378,6 +379,13 @@
     </Compile>
     <Compile Include="Administration\AdminPanel.aspx.designer.cs">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\StoriesApproval.aspx.cs">
+      <DependentUpon>StoriesApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\StoriesApproval.aspx.designer.cs">
+      <DependentUpon>StoriesApproval.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administration\StoriesPanel.aspx.cs">
       <DependentUpon>StoriesPanel.aspx</DependentUpon>

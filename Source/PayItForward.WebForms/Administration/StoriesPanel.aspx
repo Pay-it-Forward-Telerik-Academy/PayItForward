@@ -28,6 +28,7 @@
                     <asp:BoundField DataField="CollectedAmount" HeaderText="CollectedAmount" SortExpression="CollectedAmount" />
                     <asp:BoundField DataField="ExpirationDate" HeaderText="ExpirationDate" SortExpression="ExpirationDate" />
                     <asp:BoundField DataField="Category.Name" HeaderText="Category" SortExpression="Category.Name" />
+                    <asp:BoundField DataField="IsAccept" HeaderText="IsAccept" SortExpression="IsAccept" ReadOnly="true" />
                 </Columns>
             </asp:GridView>
         </ContentTemplate>
