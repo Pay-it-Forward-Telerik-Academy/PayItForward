@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" 
-    MasterPageFile="~/Administration/Administration.master" 
-    AutoEventWireup="true" 
-    CodeBehind="StoriesApproval.aspx.cs" 
+﻿<%@ Page Title="" Language="C#"
+    MasterPageFile="~/Administration/Administration.master"
+    AutoEventWireup="true"
+    CodeBehind="StoriesApproval.aspx.cs"
     Inherits="PayItForward.WebForms.Administration.StoriesApproval" %>
 
 <asp:Content ID="StoriesApproval" ContentPlaceHolderID="AdminContent" runat="server">
@@ -19,6 +19,12 @@
                 AutoGenerateEditButton="true"
                 AutoGenerateColumns="false"
                 CssClass="bordered hoverable striped">
+
+                <EmptyDataTemplate>
+                    <div class="card-panel">
+                        <h2>There are no books to approval!</h2>
+                    </div>
+                </EmptyDataTemplate>
 
                 <Columns>
                     <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" ReadOnly="true" />
