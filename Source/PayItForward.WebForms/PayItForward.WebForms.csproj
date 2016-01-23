@@ -191,20 +191,32 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Administration\AdminPanel.aspx" />
+    <Content Include="Administration\StoriesApproval.aspx" />
+    <Content Include="Administration\StoriesPanel.aspx" />
+    <Content Include="Administration\UsersPanel.aspx" />
+    <Content Include="Resources\Images\lion-photo.jpg" />
+    <Content Include="Resources\Images\SPA.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Story\Details.aspx" />
+    <Content Include="Story\Donate.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Administration\Administration.master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -356,6 +368,41 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\Administration.master.cs">
+      <DependentUpon>Administration.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Administration.master.designer.cs">
+      <DependentUpon>Administration.master</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AdminPanel.aspx.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AdminPanel.aspx.designer.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\StoriesApproval.aspx.cs">
+      <DependentUpon>StoriesApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\StoriesApproval.aspx.designer.cs">
+      <DependentUpon>StoriesApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\StoriesPanel.aspx.cs">
+      <DependentUpon>StoriesPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\StoriesPanel.aspx.designer.cs">
+      <DependentUpon>StoriesPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\UsersPanel.aspx.cs">
+      <DependentUpon>UsersPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\UsersPanel.aspx.designer.cs">
+      <DependentUpon>UsersPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -376,6 +423,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Story\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Story\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Story\Donate.aspx.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Story\Donate.aspx.designer.cs">
+      <DependentUpon>Donate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -420,13 +481,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\Documents\" />
-    <Folder Include="App_Data\Images\" />
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Resources\Documents\" />
-    <Folder Include="Resources\Images\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common\PayItForward.Common.csproj">
+      <Project>{40c88247-eb1f-4393-8ce5-0e38bb1eb8cf}</Project>
+      <Name>PayItForward.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Startkicker.Data.Models\PayItForward.Data.Models.csproj">
       <Project>{74c0976c-f6ce-4d7d-a997-9d218cd18028}</Project>
       <Name>PayItForward.Data.Models</Name>

@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Data.Entity.Core.Objects;
+    using System.Data.Entity;
     using System.Linq;
     using System.Web;
     using System.Web.UI;
@@ -29,8 +29,8 @@
 
                 var categories = Categories.GetAll().ToList();
 
-                this.lvCustomers.DataSource = stories;
-                this.lvCustomers.DataBind();
+                this.lvStories.DataSource = stories.ToList();
+                this.lvStories.DataBind();
 
                 this.CategoriesMenu.DataSource = categories;
                 this.CategoriesMenu.DataBind();
@@ -43,8 +43,8 @@
             SortType.Value = "latest";
             var Qstories = SetSortByType(SortType.Value);
             var stories = CheckForCategoryAndMakeSelection(Qstories);
-            this.lvCustomers.DataSource = stories;
-            this.lvCustomers.DataBind();
+            this.lvStories.DataSource = stories.ToList();
+            this.lvStories.DataBind();
         }
 
         protected void OnMostPopularStoryButtonClicked(object sender, EventArgs e)
@@ -53,8 +53,8 @@
             SortType.Value = "popular";
             var Qstories = SetSortByType(SortType.Value);
             var stories = CheckForCategoryAndMakeSelection(Qstories);
-            this.lvCustomers.DataSource = stories;
-            this.lvCustomers.DataBind();
+            this.lvStories.DataSource = stories.ToList();
+            this.lvStories.DataBind();
         }
 
         protected void OnAlmostThereStoryButtonClicked(object sender, EventArgs e)
@@ -63,8 +63,8 @@
             SortType.Value = "almost";
             var Qstories = SetSortByType(SortType.Value);
             var stories = CheckForCategoryAndMakeSelection(Qstories);
-            this.lvCustomers.DataSource = stories;
-            this.lvCustomers.DataBind();
+            this.lvStories.DataSource = stories.ToList();
+            this.lvStories.DataBind();
         }
 
         protected void OnCriticalStoryButtonClicked(object sender, EventArgs e)
@@ -73,27 +73,27 @@
             SortType.Value = "critical";
             var Qstories = SetSortByType(SortType.Value);
             var stories = CheckForCategoryAndMakeSelection(Qstories);
-            this.lvCustomers.DataSource = stories;
-            this.lvCustomers.DataBind();
+            this.lvStories.DataSource = stories.ToList();
+            this.lvStories.DataBind();
         }
 
         protected void OnPagePropertiesChanging(object sender, PagePropertiesChangingEventArgs e)
         {
-            (lvCustomers.FindControl("DataPager1") as DataPager).SetPageProperties(e.StartRowIndex, e.MaximumRows, false);
+            (lvStories.FindControl("DataPager1") as DataPager).SetPageProperties(e.StartRowIndex, e.MaximumRows, false);
             SortType.Value = SortType.Value;
             var Qstories = SetSortByType(SortType.Value);
             var stories = CheckForCategoryAndMakeSelection(Qstories);
-            this.lvCustomers.DataSource = stories;
-            this.lvCustomers.DataBind();
+            this.lvStories.DataSource = stories.ToList();
+            this.lvStories.DataBind();
         }
 
         private void ResetDataPager()
         {
-            var dataPager = lvCustomers.FindControl("DataPager1") as DataPager;
+            var dataPager = lvStories.FindControl("DataPager1") as DataPager;
             (dataPager).SetPageProperties(0, dataPager.MaximumRows, false);
         }
 
-        private List<Story> CheckForCategoryAndMakeSelection(IQueryable<Story> list)
+        private IQueryable<Story> CheckForCategoryAndMakeSelection(IQueryable<Story> list)
         {
             int categoryId;
             if (int.TryParse(Request.QueryString["CategoryId"],out categoryId))
@@ -101,7 +101,7 @@
               list =  list.Where(x => x.CategoryId == categoryId);
             }
 
-            return list.ToList();
+            return list;
         }
 
         private IQueryable<Story> SetSortByType(string sort)
@@ -113,7 +113,7 @@
             if (sort == "almost")
                 return Stories.GetAll().OrderBy(x => x.GoalAmount - x.CollectedAmount);
             if (sort == "critical")
-                return Stories.GetAll().OrderByDescending(x => (x.GoalAmount - x.CollectedAmount) / (EntityFunctions.DiffDays(x.ExpirationDate, DateTime.Now)));
+                return Stories.GetAll().OrderByDescending(x => (x.GoalAmount - x.CollectedAmount) / ((x.ExpirationDate - DateTime.Now).TotalDays));
             return Stories.GetAll();
         }
     }

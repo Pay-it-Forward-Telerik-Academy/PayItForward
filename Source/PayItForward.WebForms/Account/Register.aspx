@@ -14,7 +14,7 @@
                         <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                         <label for="email">Email</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                            CssClass="text-danger" ErrorMessage="The email field is required." />
+                           ForeColor="Red" ErrorMessage="The email field is required." />
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@
                         <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
                         <label for="email">Password</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                            CssClass="text-danger" ErrorMessage="The password field is required." />
+                            ForeColor="Red" ErrorMessage="The password field is required." />
                     </div>
                 </div>
 
@@ -36,7 +36,7 @@
                             CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
                         <label for="email">Confirm Password</label>
                         <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
-                            CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+                            ForeColor="Red" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
                     </div>
                 </div>
                 <div class="center">

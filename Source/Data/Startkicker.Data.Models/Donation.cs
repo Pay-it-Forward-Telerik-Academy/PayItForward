@@ -13,5 +13,7 @@
         public virtual Story Story { get; set; }
 
         public int Ammount { get; set; }
+
+        public string Country { get; set; }
     }
 }

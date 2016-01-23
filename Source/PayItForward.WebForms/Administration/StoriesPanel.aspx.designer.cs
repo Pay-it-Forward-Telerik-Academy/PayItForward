@@ -7,36 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PayItForward.WebForms.Home {
+namespace PayItForward.WebForms.Administration {
     
     
-    public partial class Index {
+    public partial class StoriesPanel {
         
         /// <summary>
-        /// SortType control.
+        /// UpdateGridPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField SortType;
+        protected global::System.Web.UI.UpdatePanel UpdateGridPanel;
         
         /// <summary>
-        /// CategoriesMenu control.
+        /// GridViewStories control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView CategoriesMenu;
-        
-        /// <summary>
-        /// lvStories control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvStories;
+        protected global::System.Web.UI.WebControls.GridView GridViewStories;
     }
 }

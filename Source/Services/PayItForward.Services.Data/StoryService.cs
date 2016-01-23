@@ -20,9 +20,9 @@
             this.usersRepo = usersRepo;
         }
 
-        public IQueryable<Story> GetById(int id)
+        public Story GetById(int id)
         {
-            return this.storyRepo.All().Where(pr => pr.Id == id);
+            return this.storyRepo.GetById(id);
         }
 
         public IQueryable<Story> GetByCategory(string categoryName)
@@ -36,7 +36,8 @@
 
         public IQueryable<Story> GetAll()
         {
-            return this.storyRepo.All().Where(x => (!x.IsRemoved) && (x.IsAccept));
+            return this.storyRepo.All().Where(x => (!x.IsRemoved)).ToList().AsQueryable();
+
         }
 
 
@@ -122,6 +123,19 @@
             this.usersRepo.SaveChanges();
 
             return 1;
+        }
+
+        public void Save()
+        {
+            this.storyRepo.SaveChanges();
+        }
+
+        public IQueryable<Story> GetNotApproved()
+        {
+            return this.storyRepo.All()
+                .Where(x => !x.IsAccept && !x.IsRemoved)
+                .ToList()
+                .AsQueryable();
         }
     }
 }

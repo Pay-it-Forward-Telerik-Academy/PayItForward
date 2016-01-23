@@ -24,7 +24,7 @@
             </asp:ListView>
         </div>
         <div class="col s9">
-            <asp:ListView ID="lvCustomers" runat="server" GroupPlaceholderID="groupPlaceHolder1"
+            <asp:ListView ID="lvStories" runat="server" GroupPlaceholderID="groupPlaceHolder1"
                 ItemPlaceholderID="itemPlaceHolder1" OnPagePropertiesChanging="OnPagePropertiesChanging">
                 <LayoutTemplate>
                     <div class="row">
@@ -33,13 +33,13 @@
 
                             <asp:LinkButton runat="server" OnClick="OnLatestStoryButtonClicked" CssClass="waves-effect waves-light  btn">
                 <i class="mdi-action-autorenew left"></i>
-                Latest
+                Latest Stories
                             </asp:LinkButton>
 
                             <%--<button runat="server" OnClick="OnLatestStoryButtonClicked" class="waves-effect waves-light  btn"><i class="mdi-action-autorenew left"></i>Latest</button>--%>
                             <asp:LinkButton runat="server" OnClick="OnMostPopularStoryButtonClicked" CssClass="waves-effect waves-light  btn">
                 <i class="mdi-action-favorite-outline left"></i>
-                Most Popular
+                Most Popular Stories
                             </asp:LinkButton>
 
                             <asp:LinkButton runat="server" OnClick="OnAlmostThereStoryButtonClicked" CssClass="waves-effect waves-light  btn">
@@ -66,7 +66,7 @@
                                     <div class="row">
                                         <asp:PlaceHolder runat="server" ID="groupPlaceHolder1"></asp:PlaceHolder>
                                     </div>
-                                    <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lvCustomers" PageSize="6">
+                                    <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lvStories" PageSize="6">
                                         <Fields>
                                             <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true"
                                                 ShowNextPageButton="false" />
@@ -94,7 +94,7 @@
                         <div class="card-content">
                             <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
                             <span class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                                <i class="mdi-action-favorite" style="position: relative"></i><small style="position: absolute; left: 11px; top: 1px; color: #26A69A;"><%#: Eval("Likes") %></small>
+                                <i class="mdi-action-favorite" style="position: relative"></i><small style="position: absolute; left: 13px; top: 1px; color: #26A69A;"><%#: Eval("Likes") %></small>
                             </span>
                             <span class="card-title activator grey-text text-darken-4"><%#: Eval("Title")%></span>
                             <p><i class="mdi-action-perm-identity"></i><%#: Eval("User.Username")%></p>
