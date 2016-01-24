@@ -195,6 +195,8 @@
     <Content Include="Administration\StoriesApproval.aspx" />
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
+    <Content Include="ErrorPages\GenericErrorPage.aspx" />
+    <Content Include="ErrorPages\HttpErrorPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Resources\Images\lion-photo.jpg" />
     <Content Include="Resources\Images\SPA.png" />
@@ -424,6 +426,21 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ErrorPages\GenericErrorPage.aspx.cs">
+      <DependentUpon>GenericErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\GenericErrorPage.aspx.designer.cs">
+      <DependentUpon>GenericErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\HttpErrorPage.aspx.cs">
+      <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\HttpErrorPage.aspx.designer.cs">
+      <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ExceptionUtility.cs" />
     <Compile Include="Story\Details.aspx.cs">
       <DependentUpon>Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

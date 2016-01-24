@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PayItForward.WebForms {
+namespace PayItForward.WebForms.ErrorPages {
     
     
-    public partial class _Default {
+    public partial class GenericErrorPage {
         
         /// <summary>
         /// Head1 control.
@@ -31,57 +31,48 @@ namespace PayItForward.WebForms {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Submit1 control.
+        /// InnerErrorPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit1;
+        protected global::System.Web.UI.WebControls.Panel InnerErrorPanel;
         
         /// <summary>
-        /// Submit2 control.
+        /// innerMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit2;
+        protected global::System.Web.UI.WebControls.Label innerMessage;
         
         /// <summary>
-        /// Submit3 control.
+        /// innerTrace control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit3;
+        protected global::System.Web.UI.WebControls.Label innerTrace;
         
         /// <summary>
-        /// Submit4 control.
+        /// exMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit4;
+        protected global::System.Web.UI.WebControls.Label exMessage;
         
         /// <summary>
-        /// Submit5 control.
+        /// exTrace control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit5;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Label exTrace;
     }
 }
