@@ -21,7 +21,7 @@
                                 <asp:TextBox runat="server" ID="Username" CssClass="form-control" TextMode="SingleLine" />
                                 <label for="Username">Username</label>
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Username"
-                                    CssClass="text-danger" ErrorMessage="The usename field is required." />
+                                    ForeColor="Red" ErrorMessage="The usename field is required." />
                             </div>
                         </div>
                         <div class="row">
@@ -30,7 +30,7 @@
                                     <i class="mdi-action-lock-outline prefix"></i>
                                     <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
                                     <label for="Password">Password</label>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" ForeColor="Red" ErrorMessage="The password field is required." />
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="center">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
+                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="waves-effect waves-light btn" />
                         </div>
                     </div>
                     <p>

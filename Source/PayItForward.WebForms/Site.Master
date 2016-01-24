@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>Pay It Forward</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -50,7 +50,7 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper  green accent-2">
-                        <a href="#" class="brand-logo center">Pay It Forword</a>
+                        <a href="#" class="brand-logo center">Pay It Forward</a>
                         <ul id="nav-mobile" class="left">
                             <li><a runat="server" href="~/">Home</a></li>
                             <li><a runat="server" href="~/Story/Create">Create Story</a></li>
