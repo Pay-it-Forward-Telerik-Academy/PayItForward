@@ -9,6 +9,7 @@ using PayItForward.Data.Models;
 
 namespace PayItForward.WebForms.Account
 {
+    using Common;
     using PayItForward.WebForms.Helpers;
 
     public partial class Register : Page
@@ -18,6 +19,7 @@ namespace PayItForward.WebForms.Account
             var manager = Context.GetOwinContext().GetUserManager<UserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
             var user = new User(){ UserName = UserName.Text, Email = Email.Text };
+            
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {
@@ -25,7 +27,7 @@ namespace PayItForward.WebForms.Account
                 //string code = manager.GenerateEmailConfirmationToken(user.Id);
                 //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
-
+                manager.AddToRole(user.Id, GlobalConstants.RoleUser);
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
                 IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
             }
