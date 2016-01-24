@@ -54,27 +54,41 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col s6">
-                            <div class="file-field input-field">
-                                <input class="file-path validate valid" type="text">
-                                <div class="btn">
-                                    <span>Image</span>
-                                    <asp:FileUpload ID="Image" runat="server" accept="image/*" />
+                    <div class="row center">
+                        <div class="col s5 offset-s1">
+                            <div class="row center">
+                                <div class="file-field input-field">
+                                    <div class="col s6">
+                                        <input class="file-path validate valid" type="text">
+                                        <label for="Image">Image</label>
+                                    </div>
+                                    <div class="col s5">
+                                        <span class="btn-floating">
+                                            <i class="mdi-image-photo-camera"></i>
+                                            <asp:FileUpload ID="Image" runat="server" accept="image/*" />
+                                        </span>
+                                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Image"
+                                            CssClass="text-danger" ErrorMessage="Please chose cover image!" />
+                                    </div>
                                 </div>
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Image"
-                                CssClass="text-danger" ErrorMessage="Please chose cover image!" />
                             </div>
                         </div>
-                        <div class="col s6">
-                            <div class="center file-field input-field">
-                                <input class="file-path validate valid" type="text">
-                                <div class="btn">
-                                    <span>Confirmation File</span>
-                                    <asp:FileUpload ID="Document" runat="server" />
+                        <div class="col s5 offset-s1">
+                            <div class="row center">
+                                <div class="file-field input-field">
+                                    <div class="col s6">
+                                        <input class="file-path validate valid" type="text">
+                                        <label for="Document">Document</label>
+                                    </div>
+                                    <div class="col s6">
+                                        <span class="btn-floating">
+                                            <i class="mdi-action-description"></i>
+                                            <asp:FileUpload ID="Document" runat="server" />
+                                        </span>
+                                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Document"
+                                            CssClass="text-danger" ErrorMessage="Please chose valid document that confirm this story!" />
+                                    </div>
                                 </div>
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Document"
-                                    CssClass="text-danger" ErrorMessage="Please chose valid document that confirm this story!" />
                             </div>
                         </div>
                     </div>
@@ -89,9 +103,9 @@
         </div>
     </div>
     <script>
-        $(document).ready(function () {
-            $('select').material_select();
-        });
+    $(document).ready(function () {
+        $('select').material_select();
+    });
     </script>
 </asp:Content>
 
