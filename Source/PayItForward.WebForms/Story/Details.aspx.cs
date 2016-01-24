@@ -23,6 +23,7 @@ namespace PayItForward.WebForms.Story
 
 
                 int storyId;
+                var id = this.Request.Params["URL"];
                 int.TryParse(Request.QueryString["id"], out storyId);
                 var story = stories.GetById(storyId);
                 this.storyTitle.InnerText = story.Title;

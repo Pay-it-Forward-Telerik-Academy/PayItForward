@@ -15,8 +15,12 @@ namespace PayItForward.WebForms
     {
         [Inject]
         public IDonationService donations { get; set; }
+
         [Inject]
         public IStoryService stories { get; set; }
+
+        [Inject]
+        public IUsersService users { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,32 +28,43 @@ namespace PayItForward.WebForms
             {
                 var countries = Countries.GetAllCountries();
                 int storyId;
-                int.TryParse(Request.QueryString["id"], out storyId);
-                var story = this.stories.GetById(storyId);
-                this.DropDownListCountries.DataSource = countries;
-                this.DropDownListCountries.DataBind();
 
-                this.Username.Enabled = false;
-                this.Email.Enabled = false;
+                if (int.TryParse(Request.QueryString["id"], out storyId))
+                {
+                    var story = this.stories.GetById(storyId);
+                    this.DropDownListCountries.DataSource = countries;
+                    this.DropDownListCountries.DataBind();
 
-                this.Username.Text = User.Identity.GetUserName();
-                this.Email.Text = User.Identity.GetUserName();
+                    this.Username.Enabled = false;
+                    this.Email.Enabled = false;
 
-                this.storyImage.Src = story.ImageUrl;
-                this.cardTitle.InnerText = story.Title;
-                this.Description.InnerText = story.Description;
+                    var currentUser = this.users.GetById(User.Identity.GetUserId());
 
-                var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
-                this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
-                this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
+                    this.Username.Text = currentUser.UserName;
+                    this.Email.Text = currentUser.Email;
 
-                this.progressBar.Style.Add("width", percentage.ToString() + "%");
+                    this.storyImage.Src = story.ImageUrl;
+                    this.cardTitle.InnerText = story.Title;
+                    this.Description.InnerText = story.Description;
+
+                    var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
+                    this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
+                    this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
+
+                    this.progressBar.Style.Add("width", percentage.ToString() + "%");
+                }
+                else
+                {
+                    this.Response.Redirect("~/Index.aspx");
+                }
             }
         }
 
         protected void CreateDonation(object sender, EventArgs e)
         {
-            this.donations.Add(User.Identity.GetUserId(), 2, int.Parse(this.Amount.Text), this.DropDownListCountries.SelectedItem.Text);
+            int storyId;
+            int.TryParse(Request.QueryString["id"], out storyId);
+            this.donations.Add(User.Identity.GetUserId(), storyId, int.Parse(this.Amount.Text), this.DropDownListCountries.SelectedItem.Text);
         }
 
         protected double CalculatePercentage(double collected, double goal)
