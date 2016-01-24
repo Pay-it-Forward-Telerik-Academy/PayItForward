@@ -25,8 +25,13 @@ namespace PayItForward.WebForms.Account
             {
                 var userId = this.User.Identity.GetUserId();
                 this.CurrentUser = users.GetById(userId);
-
             }
+        }
+
+        public IQueryable<Donation> GridViewDonations_GetData()
+        {
+            var user = this.users.GetById(this.User.Identity.GetUserId());
+            return user.Donations.AsQueryable();
         }
     }
 }
