@@ -43,14 +43,14 @@
                         <i class="mdi-action-lock-outline prefix"></i>
                         <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control" />
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
-                            CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
+                            ForeColor="Red" Display="Dynamic" ErrorMessage="The confirm password field is required." />
                         <label for="email">Confirm Password</label>
                         <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
-                            ForeColor="Red" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+                            Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
                     </div>
                 </div>
                 <div class="center">
-                    <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
+                    <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="waves-effect waves-light btn" />
                 </div>
             </div>
         </div>
