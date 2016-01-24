@@ -65,11 +65,11 @@
                                 </ul>
                             </AnonymousTemplate>
                             <LoggedInTemplate>
-                                <ul class="right hide-on-med-and-down col col s8 m8 l8">
+                                <ul class="right col col s8 m8 l8">
                                     <li>
-                                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Hello, <%: Context.User.Identity.GetUserName()  %> !<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Hello, <%: Context.User.Identity.GetUserName()  %> !<i class="mdi-navigation-arrow-drop-down right "></i></a>
                                         <ul id="profile-dropdown" class="dropdown-content active" style="width: 128px; position: absolute; top: 57px; left: 101.234px; opacity: 1; display: none;">
-                                            <li><a runat="server" href="#"><i class="mdi-action-face-unlock"></i>Profile</a>
+                                            <li><a runat="server" href="~/Account/Profile"><i class="mdi-action-face-unlock"></i>Profile</a>
                                             </li>
                                             <li><a runat="server" href="~/Account/Manage"><i class="mdi-action-settings"></i>Manage</a>
                                             </li>
