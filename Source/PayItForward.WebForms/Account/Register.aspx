@@ -14,7 +14,7 @@
                         <asp:TextBox runat="server" ID="UserName" CssClass="form-control" TextMode="SingleLine" />
                         <label for="email">Username</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
-                           ForeColor="Red" ErrorMessage="The username field is required." />
+                            ForeColor="Red" ErrorMessage="The username field is required." />
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@
                         <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                         <label for="email">Email</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                           ForeColor="Red" ErrorMessage="The email field is required." />
+                            ForeColor="Red" ErrorMessage="The email field is required." />
                     </div>
                 </div>
 
@@ -47,6 +47,26 @@
                         <label for="email">Confirm Password</label>
                         <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
                             Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="file-field input-field">
+                                <div class="col s6">
+                                    <input class="file-path validate valid" type="text">
+                                    <label for="Avatar">Avatar</label>
+                                </div>
+                                <div class="col s6">
+                                    <span class="btn-floating">
+                                        <i class="mdi-image-photo-camera"></i>
+                                        <asp:FileUpload ID="Avatar" runat="server" accept="image/*" />
+                                    </span>
+                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Avatar"
+                                        CssClass="text-danger" ErrorMessage="Please chose cover image!" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="center">

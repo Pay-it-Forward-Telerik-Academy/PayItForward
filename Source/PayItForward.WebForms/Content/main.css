@@ -381,3 +381,11 @@ h1 {
     position: absolute;
     bottom: 0px;
 }
+
+#profile-card .card-profile-image {
+    width: 70px;
+    position: absolute;
+    top: 110px;
+    z-index: 1;
+    cursor: pointer;
+}

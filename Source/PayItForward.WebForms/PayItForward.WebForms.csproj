@@ -197,6 +197,8 @@
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Resources\Avatars\Adrian.jpg" />
+    <Content Include="Resources\Images\Adrian.jpg" />
     <Content Include="Resources\Images\lion-photo.jpg" />
     <Content Include="Resources\Images\SPA.png" />
     <Content Include="Content\bootstrap.css" />

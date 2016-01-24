@@ -51,7 +51,8 @@ namespace PayItForward.Data.Migrations
                     Email = "aleksandra@gmail.com",
                     UserName = "aleksandra",
                     FirstName = "Aleksandra",
-                    LastName = "Stojceva"
+                    LastName = "Stojceva",
+                    AvatarUrl="../Resources/Avatars/aleksandra.jpg"
                 };
 
                 userManager.Create(adminAleksandra, "123456");
@@ -62,7 +63,8 @@ namespace PayItForward.Data.Migrations
                     Email = "goran@gmail.com",
                     UserName = "goran",
                     FirstName = "Goran",
-                    LastName = "Cvetkov"
+                    LastName = "Cvetkov",
+                    AvatarUrl = "../Resources/Avatars/goran.jpg"
                 };
 
                 userManager.Create(adminGoran, "123456");
@@ -75,7 +77,8 @@ namespace PayItForward.Data.Migrations
                     Email = "adrian@gmail.com",
                     UserName = "adrian",
                     FirstName = "Adrian",
-                    LastName = "Apostolov"
+                    LastName = "Apostolov",
+                    AvatarUrl = "../Resources/Avatars/adrian.jpg"
                 };
 
                 userManager.Create(adminAdrian, "123456");
