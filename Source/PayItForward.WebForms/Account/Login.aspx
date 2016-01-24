@@ -17,11 +17,11 @@
                         </asp:PlaceHolder>
                         <div class="row">
                             <div class="input-field col s12">
-                                <i class="mdi-communication-email prefix"></i>
-                                <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
-                                <label for="Email">Email</label>
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                    CssClass="text-danger" ErrorMessage="The email field is required." />
+                                <i class="mdi-action-account-circle prefix"></i>
+                                <asp:TextBox runat="server" ID="Username" CssClass="form-control" TextMode="SingleLine" />
+                                <label for="Username">Username</label>
+                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Username"
+                                    CssClass="text-danger" ErrorMessage="The usename field is required." />
                             </div>
                         </div>
                         <div class="row">

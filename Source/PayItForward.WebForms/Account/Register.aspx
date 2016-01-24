@@ -10,6 +10,16 @@
                 <h4>Register</h4>
                 <div class="row">
                     <div class="input-field col s12">
+                        <i class="mdi-action-account-circle prefix"></i>
+                        <asp:TextBox runat="server" ID="UserName" CssClass="form-control" TextMode="SingleLine" />
+                        <label for="email">Username</label>
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
+                           ForeColor="Red" ErrorMessage="The username field is required." />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
                         <i class="mdi-communication-email prefix"></i>
                         <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                         <label for="email">Email</label>
