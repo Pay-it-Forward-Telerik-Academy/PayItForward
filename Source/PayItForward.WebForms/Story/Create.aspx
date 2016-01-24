@@ -4,74 +4,70 @@
     <div class="row">
         <div class="col s8 offset-s2">
             <div class="card-panel z-depth-4">
-                <div class="form-horizontal">
-                    <h4><%: Title %></h4>
+                <div>
+                    <h4 class="center"><%: Title %></h4>
                     <asp:PlaceHolder runat="server" ID="PlaceHolder1" Visible="false">
                         <p class="text-danger">
                             <asp:Literal runat="server" ID="FailureText" />
                         </p>
                     </asp:PlaceHolder>
                     <div class="row">
-                        <div class="col s6">
-                               <label for="email">Title</label>
+                        <div class="input-field col offset-s2 s8">
+                            <i class="material-icons prefix">description</i>
                             <asp:TextBox runat="server" ID="TitleStory" TextMode="SingleLine" CssClass="form-control" />
+                            <label for="email">Title</label>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="TitleStory"
                                 CssClass="text-danger" ErrorMessage="The password field is required." />
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6">
-                            <asp:Label runat="server" AssociatedControlID="DropDownListCategories" CssClass="col-md-3 control-label">Category</asp:Label>
-                            <asp:DropDownList ID="DropDownListCategories" runat="server" DataTextField="Name" DataValueField="Id" CssClass="form-control"></asp:DropDownList>
+                        <div class="input-field col offset-s2 s8">
+                            <i class="material-icons prefix">list</i>
+                            <asp:DropDownList ID="DropDownListCategories" runat="server" DataTextField="Name" DataValueField="Id" CssClass="dropdown-category"></asp:DropDownList>
+                            <label for="email">Category</label>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col s6 input-field">
+                        <div class="col offset-s2 s8 input-field">
+                            <i class="material-icons prefix">payment</i>
                             <asp:TextBox runat="server" ID="GoalAmount" CssClass="form-control" Placeholder="Enter a goal amount(required)" TextMode="Number" />
-                            <asp:Label runat="server" AssociatedControlID="GoalAmount" CssClass="col-md-3 control-label">GoalAmount</asp:Label>
+                            <label for="email">Goal Amount</label>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="GoalAmount"
                                 CssClass="text-danger" ErrorMessage="Please specify goal amount of the story!" />
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6">
-                            <div class="form-group">
-                                <asp:Label runat="server" AssociatedControlID="EstimatedDays" CssClass="col-md-3 control-label">EstimatedDays</asp:Label>
-                                <div class="col-md-9">
-                                    <asp:TextBox runat="server" ID="EstimatedDays" CssClass="form-control" Placeholder="Enter a EstimatedDays" TextMode="Number" />
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="EstimatedDays"
-                                        CssClass="text-danger" ErrorMessage="Please specify goal amount of the story!" />
-                                </div>
-                            </div>
+                        <div class="col offset-s2 s8 input-field">
+                            <i class="mdi-notification-event-available prefix"></i>
+                            <asp:TextBox runat="server" ID="EstimatedDays" CssClass="form-control" Placeholder="Enter a EstimatedDays" TextMode="Number" />
+                            <label for="email">Estimated Days</label>
+                            <asp:RequiredFieldValidator runat="server" ControlToValidate="EstimatedDays"
+                                CssClass="text-danger" ErrorMessage="Please specify goal amount of the story!" />
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6">
-                            <div class="form-group">
-                                <asp:Label runat="server" AssociatedControlID="Description" CssClass="col-md-3 control-label">Description</asp:Label>
-                                <div class="col-md-9">
-                                    <asp:TextBox runat="server" ID="Description" CssClass="form-control" Placeholder="Enter a story's description (optional)" TextMode="MultiLine" />
-                                </div>
-                            </div>
+                        <div class="input-field col offset-s2 s8">
+                            <i class="mdi-communication-comment prefix"></i>
+                            <textarea runat="server" id="Description" length="120" class="materialize-textarea"></textarea>
+                            <label for="textarea1" class="">Description</label>
                         </div>
                     </div>
 
                     <div class="row">
-
-                        <div class="col s5 offest-s2">
+                        <div class="col s6">
                             <div class="file-field input-field">
                                 <input class="file-path validate valid" type="text">
                                 <div class="btn">
                                     <span>Image</span>
                                     <asp:FileUpload ID="Image" runat="server" accept="image/*" />
                                 </div>
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Image"
-                                    CssClass="text-danger" ErrorMessage="Please chose cover image!" />
+                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Image"
+                                CssClass="text-danger" ErrorMessage="Please chose cover image!" />
                             </div>
                         </div>
-                        <div class="col s5 offest-s2">
-                            <div class="file-field input-field">
+                        <div class="col s6">
+                            <div class="center file-field input-field">
                                 <input class="file-path validate valid" type="text">
                                 <div class="btn">
                                     <span>Confirmation File</span>
@@ -84,10 +80,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="form-group">
-                            <div class="col-md-offset-3 col-md-9">
-                                <asp:Button runat="server" OnClick="OnCreateStoryButtonClicked" Text="Create Story" CssClass="btn btn-default" />
-                            </div>
+                        <div class="center">
+                            <asp:Button runat="server" OnClick="OnCreateStoryButtonClicked" Text="Create Story" CssClass="btn waves-effect waves-light btn waves-input-wrapper green accent-4" />
                         </div>
                     </div>
                 </div>

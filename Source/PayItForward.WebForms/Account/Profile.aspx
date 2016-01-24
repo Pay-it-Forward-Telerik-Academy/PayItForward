@@ -9,13 +9,14 @@
                     <img class="activator" src="../Resources/Images/user-bg.jpg" alt="user bg">
                 </div>
                 <div class="card-content">
-                    <img src="<%= CurrentUser.AvatarUrl %>" alt="" class="circle responsive-img activator card-profile-image">
+
+                    <img src="<%= CurrentUser!=null?CurrentUser.AvatarUrl:""%>" alt="" class="circle responsive-img activator card-profile-image">
                     <a runat="server" href="~/Account/ManagePassword" class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
                         <i class="mdi-editor-mode-edit"></i>
                     </a>
 
-                    <span class="card-title activator grey-text text-darken-4"><%= CurrentUser.UserName %></span>
-                    <p><i class="mdi-action-perm-identity"></i><%=CurrentUser.Email %></p>
+                    <span class="card-title activator grey-text text-darken-4"><%= CurrentUser!=null? CurrentUser.UserName:"" %></span>
+                    <p><i class="mdi-action-perm-identity"></i><%= CurrentUser!=null?CurrentUser.Email:"" %></p>
 
                 </div>
             </div>
