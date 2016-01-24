@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="card-action">
-                        <a href="#" class="lime-text text-accent-1">Donate</a>
+                        <a href="/Story/Donate?id=<%=Request.QueryString["id"]%>" class="lime-text text-accent-1">Donate</a>
                     </div>
                 </div>
             </div>

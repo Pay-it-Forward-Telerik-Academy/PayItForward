@@ -15,16 +15,15 @@ namespace PayItForward.WebForms.Story
         [Inject]
         public ICommentsService comments { get; set; }
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
                 //int storyId = int.Parse(this.Request.QueryString["id"]);
+
+
                 int storyId;
-
                 int.TryParse(Request.QueryString["id"], out storyId);
-
                 var story = stories.GetById(storyId);
                 this.storyTitle.InnerText = story.Title;
                 this.imageStory.ImageUrl = story.ImageUrl;
@@ -34,11 +33,9 @@ namespace PayItForward.WebForms.Story
                 this.CommentsRepeater.DataSource = story.Comments.ToList();
                 this.CommentsRepeater.DataBind();
 
-
                 var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
                 this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
                 this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
-
                 this.progressBar.Style.Add("width", percentage.ToString() + "%");
 
 

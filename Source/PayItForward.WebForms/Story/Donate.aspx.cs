@@ -23,8 +23,9 @@ namespace PayItForward.WebForms
             if (!this.IsPostBack)
             {
                 var countries = Countries.GetAllCountries();
-                var story = this.stories.GetById(2);
-
+                int storyId;
+                int.TryParse(Request.QueryString["id"], out storyId);
+                var story = this.stories.GetById(storyId);
                 this.DropDownListCountries.DataSource = countries;
                 this.DropDownListCountries.DataBind();
 
