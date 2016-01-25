@@ -382,6 +382,13 @@ h1 {
     bottom: 0px;
 }
 
+#profile-card .card-profile-image {
+    width: 70px;
+    position: absolute;
+    top: 110px;
+    z-index: 1;
+    cursor: pointer;
+}
 .browser-window {
   text-align: left;
   width: 100%;
@@ -461,6 +468,14 @@ h1 {
   text-align: center;
   padding: 20px 0 !important;
 }
+
+#profile-card .card-profile-image-index {
+  width: 70px;
+  position: relative;
+  bottom: 60px;
+  z-index: 1;
+  cursor: pointer;
+
 #site-layout-example-top {
   background-color: #E57373;
   height: 50px;
@@ -483,4 +498,8 @@ h1 {
   background-color: rgba(255, 255, 255, 0.15);
   display: block;
   margin: 27px auto;
+}
+
+.dropdown-category{
+  margin-left: 40px;
 }

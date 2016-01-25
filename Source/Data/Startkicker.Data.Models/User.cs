@@ -37,6 +37,8 @@
         [Column(TypeName = "Money")]
         public int AvailableMoneyAmount { get; set; }
 
+        public string AvatarUrl { get; set; }
+
         public virtual ICollection<Story> Stories
         {
             get

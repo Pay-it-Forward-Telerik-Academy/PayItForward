@@ -28,7 +28,7 @@ namespace PayItForward.WebForms
             Exception exc = Server.GetLastError();
 
             // Handle HTTP errors
-            if (exc.GetType() == typeof(HttpException))
+            if (exc.GetType() == typeof(HttpException) || exc.GetType() == typeof(HttpUnhandledException))
             {
                 Server.Transfer("~/ErrorPages/HttpErrorPage.aspx");
             }
