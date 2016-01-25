@@ -22,21 +22,21 @@ namespace PayItForward.WebForms.Administration {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl usersCount;
         
         /// <summary>
-        /// H1 control.
+        /// storiesCount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl storiesCount;
         
         /// <summary>
-        /// H2 control.
+        /// donationCount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl donationCount;
     }
 }

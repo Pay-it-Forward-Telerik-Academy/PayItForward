@@ -9,8 +9,8 @@
                 <EmptyDataTemplate>No Menu Items.</EmptyDataTemplate>
                 <ItemSeparatorTemplate></ItemSeparatorTemplate>
                 <ItemTemplate>
-                    <li>
-                        <a class="z-depth-1" href='<%# VirtualPathUtility.ToAbsolute("~/Index?CategoryId=" + 
+                    <li class="card-panel hoverable center  teal">
+                        <a class="white-text " style="display: block; width: 100%; height: 100%;" href='<%# VirtualPathUtility.ToAbsolute("~/Index?CategoryId=" + 
                                 Eval("Id")) %>'><%# Eval("Name") %></a>
                     </li>
                 </ItemTemplate>

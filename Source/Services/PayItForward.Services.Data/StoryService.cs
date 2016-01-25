@@ -151,5 +151,10 @@
             this.storyRepo.SaveChanges();
             return storyToUpdate;
         }
+
+        public int Count()
+        {
+            return this.storyRepo.All().Count();
+        }
     }
 }

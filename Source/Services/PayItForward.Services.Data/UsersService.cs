@@ -22,6 +22,11 @@
            return this.usersRepo.All().OrderBy(u => u.Id);
         }
 
+        public int Count()
+        {
+           return this.usersRepo.All().Count();
+        }
+
         public void Delete(string id)
         {
             this.usersRepo.Delete(id);

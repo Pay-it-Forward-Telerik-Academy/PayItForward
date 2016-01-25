@@ -13,5 +13,7 @@
         void Update();
 
         void Delete(string id);
+
+        int Count();
     }
 }

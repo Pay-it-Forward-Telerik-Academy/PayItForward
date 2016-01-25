@@ -21,7 +21,7 @@
                 <div class="card center">
                     <div class="card-content  purple white-text">
                         <p class="card-stats-title center"><i class="mdi-editor-insert-drive-file"></i>New Stories</p>
-                        <h4 class="card-stats-number" id="H1" runat="server">100</h4>
+                        <h4 class="card-stats-number" id="storiesCount" runat="server">100</h4>
                         <p class="card-stats-compare center">
                             <i class="mdi-hardware-keyboard-arrow-up"></i>5% <span class="green-text text-lighten-5">from yesterday</span>
                         </p>
@@ -32,7 +32,7 @@
                 <div class="card center">
                     <div class="card-content blue-grey white-text">
                         <p class="card-stats-title center"><i class="mdi-action-trending-up"></i>New Donation</p>
-                        <h4 class="card-stats-number" id="H2" runat="server">345</h4>
+                        <h4 class="card-stats-number" id="donationCount" runat="server">345</h4>
                         <p class="card-stats-compare">
                             <i class="mdi-hardware-keyboard-arrow-up"></i>12% <span class="green-text text-lighten-5">from yesterday</span>
                         </p>

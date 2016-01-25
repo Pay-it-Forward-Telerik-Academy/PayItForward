@@ -51,8 +51,8 @@ namespace PayItForward.WebForms.Story
                 Document.SaveAs(Server.MapPath("~/Resources/Documents/") + filename);
             }
 
-            stories.Add(this.TitleStory.Text, this.Description.InnerText, int.Parse(this.GoalAmount.Text), int.Parse(this.EstimatedDays.Text), int.Parse(this.DropDownListCategories.SelectedValue), userId, imageUrl, documentUrl);
-
+            var newStoryID = stories.Add(this.TitleStory.Text, this.Description.InnerText, int.Parse(this.GoalAmount.Text), int.Parse(this.EstimatedDays.Text), int.Parse(this.DropDownListCategories.SelectedValue), userId, imageUrl, documentUrl);
+            this.Response.Redirect("~/Story/Details?id=" + newStoryID);
         }
     }
 }
