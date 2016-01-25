@@ -21,6 +21,7 @@
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!Page.IsPostBack)
             {
 
@@ -96,9 +97,9 @@
         private IQueryable<Story> CheckForCategoryAndMakeSelection(IQueryable<Story> list)
         {
             int categoryId;
-            if (int.TryParse(Request.QueryString["CategoryId"],out categoryId))
+            if (int.TryParse(Request.QueryString["CategoryId"], out categoryId))
             {
-              list =  list.Where(x => x.CategoryId == categoryId);
+                list = list.Where(x => x.CategoryId == categoryId);
             }
 
             return list;

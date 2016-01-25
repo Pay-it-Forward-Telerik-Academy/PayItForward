@@ -468,6 +468,14 @@ h1 {
   text-align: center;
   padding: 20px 0 !important;
 }
+
+#profile-card .card-profile-image-index {
+  width: 70px;
+  position: relative;
+  bottom: 60px;
+  z-index: 1;
+  cursor: pointer;
+
 #site-layout-example-top {
   background-color: #E57373;
   height: 50px;

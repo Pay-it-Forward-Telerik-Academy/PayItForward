@@ -93,10 +93,10 @@
                     <%--<%#  (Container.ItemIndex == 0 || (Container.ItemIndex +1 ) % 3 == 1) ? @"<div class='row'>":"" %>--%>
                     <div id="profile-card" class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="<%#: Eval("ImageUrl")%>" alt="user bg">
+                            <img class="activator" src="<%#:Eval("ImageUrl")%>" alt="user bg">
                         </div>
                         <div class="card-content">
-                            <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                            <img src="<%#: Eval("User.AvatarUrl") %>"" alt="" class="circle responsive-img activator card-profile-image-index">
                             <span class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
                                 <i class="mdi-action-favorite" style="position: relative"></i><small style="position: absolute; left: 13px; top: 1px; color: #26A69A;"><%#: Eval("Likes") %></small>
                             </span>
@@ -108,7 +108,7 @@
                                 <span id="goalAmount">$<%#: Eval("GoalAmount") %></span>
                             </div>
                             <div class="progress">
-                                <div class="determinate" id="progressBar"><%#: ((double)Eval("CollectedAmount")/(double)Eval("GoalAmount"))*100  %></div>
+                                <div class="determinate" id="progressBar"  <%#: "style= width:" +  (((double)Eval("CollectedAmount")/(double)Eval("GoalAmount"))*100) + "%;"%>"></div>
                             </div>
 
 
@@ -129,7 +129,7 @@
                                 <span>$<%#: Eval("GoalAmount") %></span>
                             </div>
                             <div class="progress">
-                                <div class="determinate"><%#: ((double)Eval("CollectedAmount")/(double)Eval("GoalAmount"))*100  %></div>
+                                <div class="determinate" <%#: "style= width:" +  (((double)Eval("CollectedAmount")/(double)Eval("GoalAmount"))*100) + "%;"%>"></div>
                             </div>
                             <p>
                         </div>

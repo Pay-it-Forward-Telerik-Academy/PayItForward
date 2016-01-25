@@ -21,8 +21,12 @@ namespace PayItForward.WebForms.Account
             var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
             if (!String.IsNullOrEmpty(returnUrl))
             {
-                this.Response.Redirect("~/ErrorPages/Forbidden");
-                RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
+                // this.Response.Redirect("~/ErrorPages/Forbidden");
+                //Response.StatusCode = 403;
+                //Response.Flush();
+                throw new HttpException(403, "Test");
+                //throw new HttpException(403, "Test");
+                //RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
             }
         }
 
