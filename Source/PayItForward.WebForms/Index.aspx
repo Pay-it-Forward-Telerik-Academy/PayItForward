@@ -91,16 +91,18 @@
                 <ItemTemplate>
 
                     <%--<%#  (Container.ItemIndex == 0 || (Container.ItemIndex +1 ) % 3 == 1) ? @"<div class='row'>":"" %>--%>
-                    <div id="profile-card" class="card">
+                    <div id="profile-card" class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="<%#:Eval("ImageUrl")%>" alt="user bg">
+                            <img style="height: 170px;" class="activator" src="<%#:Eval("ImageUrl")%>" alt="user bg">
                         </div>
                         <div class="card-content">
                             <img src="<%#: Eval("User.AvatarUrl") %>"" alt="" class="circle responsive-img activator card-profile-image-index">
                             <span class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
                                 <i class="mdi-action-favorite" style="position: relative"></i><small style="position: absolute; left: 13px; top: 1px; color: #26A69A;"><%#: Eval("Likes") %></small>
                             </span>
-                            <span class="card-title activator grey-text text-darken-4"><%#: Eval("Title")%></span>
+                            <div>
+                                <span style="font-size: 17px; font-weight: normal; line-height: 0" class="card-title activator grey-text text-darken-4"><%#: Eval("Title")%></span>
+                            </div>
                             <p><i class="mdi-action-perm-identity"></i><%#: Eval("User.Username")%></p>
                             <div class="center">
                                 <span id="collectedAmount">$<%#: Eval("CollectedAmount") %></span>

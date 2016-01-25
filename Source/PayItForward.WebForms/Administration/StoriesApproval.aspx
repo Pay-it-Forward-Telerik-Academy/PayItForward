@@ -29,6 +29,11 @@
                             <asp:CheckBox ID="ChkStatus" Checked="<%# BindItem.IsAccept %>" Text="Accept" runat="server" />
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Document">
+                        <ItemTemplate>
+                            <a href="<%# Eval("DocumentUrl") %>" download>Download</a>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
         </ContentTemplate>
