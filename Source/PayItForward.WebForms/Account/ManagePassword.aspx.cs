@@ -33,11 +33,6 @@ namespace PayItForward.WebForms.Account
                 {
                     changePasswordHolder.Visible = true;
                 }
-                else
-                {
-                    setPassword.Visible = true;
-                    changePasswordHolder.Visible = false;
-                }
 
                 // Render success message
                 var message = Request.QueryString["m"];
@@ -68,25 +63,7 @@ namespace PayItForward.WebForms.Account
                 }
             }
         }
-
-        protected void SetPassword_Click(object sender, EventArgs e)
-        {
-            if (IsValid)
-            {
-                // Create the local login info and link the local account to the user
-                var manager = Context.GetOwinContext().GetUserManager<UserManager>();
-                IdentityResult result = manager.AddPassword(User.Identity.GetUserId(), password.Text);
-                if (result.Succeeded)
-                {
-                    Response.Redirect("~/Account/Manage?m=SetPwdSuccess");
-                }
-                else
-                {
-                    AddErrors(result);
-                }
-            }
-        }
-
+        
         private void AddErrors(IdentityResult result)
         {
             foreach (var error in result.Errors)
