@@ -210,6 +210,7 @@
     <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="ErrorPages\GenericErrorPage.aspx" />
     <Content Include="ErrorPages\HttpErrorPage.aspx" />
+    <Content Include="ErrorPages\NotFoundErrorPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Resources\Avatars\Adrian.jpg" />
     <Content Include="Resources\Images\Adrian.jpg" />
@@ -461,6 +462,13 @@
     </Compile>
     <Compile Include="ErrorPages\HttpErrorPage.aspx.designer.cs">
       <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\NotFoundErrorPage.aspx.cs">
+      <DependentUpon>NotFoundErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\NotFoundErrorPage.aspx.designer.cs">
+      <DependentUpon>NotFoundErrorPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Helpers\ExceptionUtility.cs" />

@@ -3794,3 +3794,1122 @@ Stack Trace:
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 
+********** 1/25/2016 8:53:20 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_rhqv53ta.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 8:53:20 PM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: UserId not found.
+Inner Source: Microsoft.AspNet.Identity.Core
+Inner Stack Trace: 
+   at Microsoft.AspNet.Identity.UserManager`2.<HasPasswordAsync>d__1b.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNet.Identity.AsyncHelper.RunSync[TResult](Func`1 func)
+   at Microsoft.AspNet.Identity.UserManagerExtensions.HasPassword[TUser,TKey](UserManager`2 manager, TKey userId)
+   at PayItForward.WebForms.Account.ManagePassword.HasPassword(UserManager manager) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 22
+   at PayItForward.WebForms.Account.ManagePassword.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 32
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_rhqv53ta.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 8:53:37 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_c4j1anqz.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 8:53:37 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.ErrorPages.HttpErrorPage.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\ErrorPages\HttpErrorPage.aspx.cs:line 18
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_c4j1anqz.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 8:54:14 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_rhqv53ta.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 8:54:14 PM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: UserId not found.
+Inner Source: Microsoft.AspNet.Identity.Core
+Inner Stack Trace: 
+   at Microsoft.AspNet.Identity.UserManager`2.<HasPasswordAsync>d__1b.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNet.Identity.AsyncHelper.RunSync[TResult](Func`1 func)
+   at Microsoft.AspNet.Identity.UserManagerExtensions.HasPassword[TUser,TKey](UserManager`2 manager, TKey userId)
+   at PayItForward.WebForms.Account.ManagePassword.HasPassword(UserManager manager) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 22
+   at PayItForward.WebForms.Account.ManagePassword.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 32
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_rhqv53ta.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 8:57:13 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_rhqv53ta.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 8:57:13 PM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: UserId not found.
+Inner Source: Microsoft.AspNet.Identity.Core
+Inner Stack Trace: 
+   at Microsoft.AspNet.Identity.UserManager`2.<HasPasswordAsync>d__1b.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNet.Identity.AsyncHelper.RunSync[TResult](Func`1 func)
+   at Microsoft.AspNet.Identity.UserManagerExtensions.HasPassword[TUser,TKey](UserManager`2 manager, TKey userId)
+   at PayItForward.WebForms.Account.ManagePassword.HasPassword(UserManager manager) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 22
+   at PayItForward.WebForms.Account.ManagePassword.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 32
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Adapters.ControlAdapter.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_rhqv53ta.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 8:59:06 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_qrpr1anf.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 8:59:07 PM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: UserId not found.
+Inner Source: Microsoft.AspNet.Identity.Core
+Inner Stack Trace: 
+   at Microsoft.AspNet.Identity.UserManager`2.<HasPasswordAsync>d__1b.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNet.Identity.AsyncHelper.RunSync[TResult](Func`1 func)
+   at Microsoft.AspNet.Identity.UserManagerExtensions.HasPassword[TUser,TKey](UserManager`2 manager, TKey userId)
+   at PayItForward.WebForms.Account.ManagePassword.HasPassword(UserManager manager) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 22
+   at PayItForward.WebForms.Account.ManagePassword.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 32
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Adapters.ControlAdapter.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_qrpr1anf.4.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 9:03:02 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_slxckz4y.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 9:03:02 PM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Adapters.ControlAdapter.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_slxckz4y.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 9:03:23 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_slxckz4y.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 9:03:23 PM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Adapters.ControlAdapter.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_slxckz4y.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 9:03:37 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_bb2k4kze.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 9:03:37 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.ErrorPages.HttpErrorPage.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\ErrorPages\HttpErrorPage.aspx.cs:line 18
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Adapters.ControlAdapter.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_bb2k4kze.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 9:35:51 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_5eyte1ci.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 9:35:52 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.ManagePassword.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 34
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_5eyte1ci.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 9:54:54 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_hftc5uph.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 9:54:54 PM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: UserId not found.
+Inner Source: Microsoft.AspNet.Identity.Core
+Inner Stack Trace: 
+   at Microsoft.AspNet.Identity.UserManager`2.<HasPasswordAsync>d__1b.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNet.Identity.AsyncHelper.RunSync[TResult](Func`1 func)
+   at Microsoft.AspNet.Identity.UserManagerExtensions.HasPassword[TUser,TKey](UserManager`2 manager, TKey userId)
+   at PayItForward.WebForms.Account.ManagePassword.HasPassword(UserManager manager) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 22
+   at PayItForward.WebForms.Account.ManagePassword.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\ManagePassword.aspx.cs:line 32
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_managepassword_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_hftc5uph.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 9:58:06 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.story_donate_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_sx3ttpii.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 9:58:06 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Donate.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Story\Donate.aspx.cs:line 43
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.story_donate_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_sx3ttpii.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 10:04:09 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_dpsrrsv4.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 10:04:09 PM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_dpsrrsv4.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 11:35:20 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 11:35:20 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.ErrorPages.HttpErrorPage.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\ErrorPages\HttpErrorPage.aspx.cs:line 18
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 11:35:57 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 11:36:00 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.ErrorPages.HttpErrorPage.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\ErrorPages\HttpErrorPage.aspx.cs:line 18
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 11:37:03 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 11:37:04 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.ErrorPages.HttpErrorPage.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\ErrorPages\HttpErrorPage.aspx.cs:line 18
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 11:37:46 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_kw11chgh.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 11:37:46 PM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_kw11chgh.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 11:39:07 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Oops...! :(
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 11:39:36 PM **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Object reference not set to an instance of an object.
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.ErrorPages.HttpErrorPage.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\ErrorPages\HttpErrorPage.aspx.cs:line 18
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.errorpages_httperrorpage_aspx.ProcessRequest(HttpContext context) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_ux32utcb.1.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/25/2016 11:42:13 PM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_kw11chgh.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/25/2016 11:42:13 PM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_kw11chgh.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/26/2016 12:34:25 AM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_3kzpphre.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/26/2016 12:34:25 AM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_3kzpphre.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/26/2016 12:35:31 AM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_opc11qiq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/26/2016 12:35:31 AM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_opc11qiq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 1/26/2016 12:38:59 AM **********
+Inner Exception Type: System.Web.HttpUnhandledException
+Inner Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Inner Source: System.Web
+Inner Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_opc11qiq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+Exception Type: System.Web.HttpException
+Exception: Forbidden Request!
+Source: HttpErrorPage
+Stack Trace: 
+********** 1/26/2016 12:38:59 AM **********
+Inner Exception Type: System.Web.HttpException
+Inner Exception: Test
+Inner Source: PayItForward.WebForms
+Inner Stack Trace: 
+   at PayItForward.WebForms.Account.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Adrian Apostolov\Desktop\Web Forms Teamwork\PayItForward\Source\PayItForward.WebForms\Account\Login.aspx.cs:line 27
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.<LoadRecursiveAsync>d__246.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: DefaultPage
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.<ProcessRequestMainAsync>d__523.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Util.WithinCancellableCallbackTaskAwaitable.WithinCancellableCallbackTaskAwaiter.GetResult()
+   at System.Web.UI.Page.<ProcessRequestAsync>d__515.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.UI.Page.<ProcessRequestAsync>d__554.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.TaskAsyncHelper.EndTask(IAsyncResult ar)
+   at System.Web.UI.Page.AsyncPageEndProcessRequest(IAsyncResult result)
+   at ASP.account_login_aspx.EndProcessRequest(IAsyncResult ar) in C:\Users\Adrian Apostolov\AppData\Local\Temp\Temporary ASP.NET Files\vs\f3e5d05d\90e3b3ca\App_Web_opc11qiq.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
