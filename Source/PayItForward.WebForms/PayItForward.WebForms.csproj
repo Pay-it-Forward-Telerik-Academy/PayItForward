@@ -208,6 +208,7 @@
     <Content Include="Administration\StoriesApproval.aspx" />
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
+    <Content Include="Content\test.css" />
     <Content Include="ErrorPages\GenericErrorPage.aspx" />
     <Content Include="ErrorPages\HttpErrorPage.aspx" />
     <Content Include="favicon.ico" />

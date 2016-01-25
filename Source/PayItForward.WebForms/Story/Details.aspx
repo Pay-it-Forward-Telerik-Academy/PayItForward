@@ -27,30 +27,38 @@
                         </asp:UpdatePanel>
 
                         <div class="col s6">
-                            <span class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
-                                            <small id="Small1" runat="server" style="position: absolute; left: 11px; top: 1px; color: white;">View</small>
-                                        </span>
-                            <span class="activator blue-text text-darken-2"><i class="material-icons dp48">chat_bubble_outline</i></span></div>
+                            <%--<span class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
+                                <small id="Small1" runat="server" style="position: absolute; left: 11px; top: 1px; color: white;">View</small>
+                            </span>--%>
+                            <span class="activator white-text text-darken-2 btn-floating waves-effect waves-light right">View</span>
+                        </div>
                     </div>
-                    <div class="card-reveal" style="display: none; transform: translateY(0px);">
+                    <div class="card-reveal" style="display: none; overflow:hidden; transform: translateY(0px);">
                         <span class="card-title grey-text text-darken-4">Comments<i class="material-icons right">close</i></span>
-                        <asp:UpdatePanel ID="UpdatePanelFavoriteDrink" runat="server" class="panel"
+                        <asp:UpdatePanel ID="UpdatePanelFavoriteDrink" runat="server" style="max-height: 60%; overflow-y: scroll; overflow-x: hidden;" class="panel"
                             UpdateMode="Conditional">
                             <ContentTemplate>
-                                <ul class="collapsible popout collapsible-accordion" data-collapsible="accordion">
+                                <ul>
                                     <asp:Repeater ID="CommentsRepeater" runat="server">
                                         <ItemTemplate>
                                             <li class="">
-                                                <div class="collapsible-header"><i class="material-icons">library_books</i><%#: Eval("User.Email") %></div>
+                                                <div class="dialogbox">
+                                                    <div class="body">
+                                                        <span class="tip tip-up"></span>
+                                                        <div class="message">
+                                                            <span><%#: Eval("Context") %></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <%-- <div class="collapsible-header"><i class="material-icons">library_books</i><%#: Eval("User.Email") %></div>
                                                 <div class="collapsible-body" style="display: none;">
                                                     <p><%#: Eval("Context") %> </p>
-                                                </div>
+                                                </div>--%>
                                             </li>
                                         </ItemTemplate>
                                     </asp:Repeater>
                                 </ul>
                                 <div class="row">
-
                                     <div class="col s12 fixed-bottom">
                                         <div class="row">
                                             <div class="input-field col s12">
