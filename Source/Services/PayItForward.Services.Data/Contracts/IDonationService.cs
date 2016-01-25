@@ -12,5 +12,7 @@
         IQueryable<Donation> GetByStory(string storyName);
 
         int Add(string userId, int storyId, int Ammount, string Country);
+
+        int Count();
     }
 }

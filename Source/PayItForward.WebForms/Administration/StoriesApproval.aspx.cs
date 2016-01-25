@@ -5,7 +5,7 @@
     using PayItForward.Data.Models;
     using Ninject;
     using PayItForward.Services.Data.Contracts;
-
+    using System.Web.UI.WebControls;
     public partial class StoriesApproval : System.Web.UI.Page
     {
         [Inject]
@@ -21,7 +21,7 @@
             return this.stories.GetNotApproved();
         }
 
-        public void GridViewStories_UpdateItem(int id)
+        public void GridViewStories_UpdateData(int id)
         {
             Story story = this.stories.GetById(id);
 

@@ -37,6 +37,11 @@
             return donationToAdd.Id;
         }
 
+        public int Count()
+        {
+            return this.donationRepo.All().Count();
+        }
+
         public IQueryable<Donation> GetAll()
         {
             throw new NotImplementedException();
