@@ -489,9 +489,8 @@ h1 {
     left: 5px;
     z-index: 1;
     cursor: pointer;
-    #site-layout-example-top;
 }
-
+#site-layout-example-top
 {
     background-color: #E57373;
     height: 50px;
@@ -520,7 +519,6 @@ h1 {
     margin: 27px auto;
 }
 
-}
 .card.card-image img {
     height: 170px !important;
 }
