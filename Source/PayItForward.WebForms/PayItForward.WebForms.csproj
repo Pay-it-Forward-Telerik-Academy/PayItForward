@@ -209,6 +209,7 @@
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
     <Content Include="Content\test.css" />
+    <Content Include="Controls\Notifier\Notifier.ascx" />
     <Content Include="ErrorPages\GenericErrorPage.aspx" />
     <Content Include="ErrorPages\HttpErrorPage.aspx" />
     <Content Include="ErrorPages\NotFoundErrorPage.aspx" />
@@ -222,6 +223,7 @@
     <Content Include="Content\main.css" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\materialize.js" />
     <Content Include="Story\Details.aspx" />
     <Content Include="Story\Donate.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -443,6 +445,13 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controls\Notifier\Notifier.ascx.cs">
+      <DependentUpon>Notifier.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Notifier\Notifier.ascx.designer.cs">
+      <DependentUpon>Notifier.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

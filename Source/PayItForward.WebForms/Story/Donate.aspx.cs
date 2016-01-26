@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity;
 using PayItForward.Services.Data.Contracts;
 using Ninject;
 using PayItForward.Common;
+using PayItForward.WebForms.Controls.Notifier;
 
 namespace PayItForward.WebForms
 {
@@ -31,9 +32,12 @@ namespace PayItForward.WebForms
 
                 if (int.TryParse(Request.QueryString["id"], out storyId))
                 {
+                    
+
                     var story = this.stories.GetById(storyId);
                     this.DropDownListCountries.DataSource = countries;
                     this.DropDownListCountries.DataBind();
+                    this.storyDetails.HRef = "Story/Details?id=" + story.Id;
 
                     this.Username.Enabled = false;
                     this.Email.Enabled = false;
@@ -62,6 +66,8 @@ namespace PayItForward.WebForms
 
         protected void CreateDonation(object sender, EventArgs e)
         {
+            Notifier notifier = new Notifier();
+            notifier.Message("You donate successful!");
             int storyId;
             int.TryParse(Request.QueryString["id"], out storyId);
             this.donations.Add(User.Identity.GetUserId(), storyId, int.Parse(this.Amount.Text), this.DropDownListCountries.SelectedItem.Text);

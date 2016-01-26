@@ -22,6 +22,15 @@ namespace PayItForward.WebForms {
         protected global::System.Web.UI.HtmlControls.HtmlForm multipartrequest;
         
         /// <summary>
+        /// createStory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor createStory;
+        
+        /// <summary>
         /// admin control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace PayItForward.WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        
+        /// <summary>
+        /// Notifier control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PayItForward.WebForms.Controls.Notifier.Notifier Notifier;
         
         /// <summary>
         /// SiteMapDataSource control.
