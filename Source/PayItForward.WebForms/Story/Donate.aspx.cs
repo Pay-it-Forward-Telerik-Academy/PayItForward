@@ -74,7 +74,7 @@ namespace PayItForward.WebForms
             this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
 
             this.progressBar.Style.Add("width", percentage.ToString() + "%");
-            //this.ProgressPanel.Update();
+            this.ProgressPanel.Update();
             //Notifier notifier = new Notifier();
             //notifier.Message("You donate successful!");
 
