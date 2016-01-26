@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" MasterPageFile="~/Site.Master" Inherits="PayItForward.WebForms.Home.Index" %>
-
+<%@ Import Namespace="PayItForward.Data.Models" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:HiddenField ID="SortType" runat="server" Value="" />
 
@@ -98,7 +98,7 @@
                         <div class="card-content">
                             <img src="<%#: Eval("User.AvatarUrl") %>"" alt="" class="circle responsive-img activator card-profile-image-index">
                             <span class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                                <i class="mdi-action-favorite" style="position: relative"></i><small style="position: absolute; left: 13px; top: 1px; color: #26A69A;"><%#: Eval("Likes") %></small>
+                                <i class="mdi-action-favorite" style="position: relative"></i><small style="position: absolute; left: 13px; top: 1px; color: #26A69A;"><%# ((HashSet<Like>)Eval("Likes")).Count() %></small>
                             </span>
                             <div>
                                 <span style="font-size: 17px; font-weight: normal; line-height: 0" class="card-title activator grey-text text-darken-4"><%#: Eval("Title")%></span>

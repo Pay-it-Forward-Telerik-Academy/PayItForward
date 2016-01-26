@@ -21,11 +21,7 @@ namespace PayItForward.WebForms.Story
         {
             if (!Page.IsPostBack)
             {
-                //int storyId = int.Parse(this.Request.QueryString["id"]);
-
-
                 int storyId;
-                var id = this.Request.Params["URL"];
                 int.TryParse(Request.QueryString["id"], out storyId);
                 var story = stories.GetById(storyId);
                 this.storyTitle.InnerText = story.Title;
