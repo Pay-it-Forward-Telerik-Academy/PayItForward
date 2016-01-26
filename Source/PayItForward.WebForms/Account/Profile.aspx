@@ -37,7 +37,35 @@
                         MultipleActiveResultSets="true"
                         AutoGenerateColumns="false"
                         CssClass="bordered hoverable striped">
+                        <PagerTemplate>
 
+                            <table width="100%">
+                                <tr>
+                                    <td style="width: 70%">
+
+                                        <asp:Label ID="MessageLabel"
+                                            ForeColor="Blue"
+                                            Text="Select a page:"
+                                            runat="server" />
+                                        <asp:DropDownList ID="PageDropDownList"
+                                            AutoPostBack="true"
+                                            OnSelectedIndexChanged="PageDropDownList_SelectedIndexChanged"
+                                            runat="server" />
+
+                                    </td>
+
+                                    <td style="width: 70%; text-align: right">
+
+                                        <asp:Label ID="CurrentPageLabel"
+                                            ForeColor="Blue"
+                                            runat="server" />
+
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                        </PagerTemplate>
                         <Columns>
                             <asp:BoundField DataField="Story.Title" HeaderText="Story" SortExpression="Story.Title" />
                             <asp:BoundField DataField="Ammount" HeaderText="Amount Donated" SortExpression="Ammount" />

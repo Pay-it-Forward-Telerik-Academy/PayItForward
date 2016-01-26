@@ -10,10 +10,13 @@
 
         private ICollection<Comment> comments;
 
+        private ICollection<Like> likes;
+
         public Story()
         {
             this.comments = new HashSet<Comment>();
             this.donations = new HashSet<Donation>();
+            this.likes = new HashSet<Like>();
         }
 
         public int Id { get; set; }
@@ -23,8 +26,6 @@
         public string Title { get; set; }
 
         public string Description { get; set; }
-
-        public int Likes { get; set; }
 
         public double CollectedAmount { get; set; }
 
@@ -72,6 +73,19 @@
             set
             {
                 this.donations = value;
+            }
+        }
+
+        public virtual ICollection<Like> Likes
+        {
+            get
+            {
+                return this.likes;
+            }
+
+            set
+            {
+                this.likes = value;
             }
         }
     }
