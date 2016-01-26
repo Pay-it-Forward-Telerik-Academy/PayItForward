@@ -90,12 +90,14 @@
                         <div class="progress">
                             <div class="determinate" id="progressBar" runat="server"></div>
                         </div>
+                        <span class="teal-text text-accent-1">Expiration Date:</span><div runat="server" id="expiratonDate"></div>
                     </div>
                     <div class="card-action">
-                        <a href="/Story/Donate?id=<%=Request.QueryString["id"]%>" class="lime-text text-accent-1">Donate</a>
+                        <a href="/Story/Donate?id=<%=Request.QueryString["id"]%>" class="teal-text text-accent-1">Donate</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </asp:Content>

@@ -40,6 +40,7 @@ namespace PayItForward.WebForms.Story
                 this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
                 this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
                 this.progressBar.Style.Add("width", percentage.ToString() + "%");
+                this.expiratonDate.InnerHtml = story.ExpirationDate.ToString();
 
 
             }
@@ -55,6 +56,7 @@ namespace PayItForward.WebForms.Story
             var story = stories.GetById(storyId);
             this.CommentsRepeater.DataSource = this.comments.GetAllByStoryIdOrderedByDate(storyId);
             this.CommentsRepeater.DataBind();
+            this.comment.Value = "";
         }
 
         protected void OnAddLike(object sender, EventArgs e)
