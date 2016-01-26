@@ -56,6 +56,11 @@ namespace PayItForward.WebForms
                 this.admin.Visible = false;
             }
 
+            if (!this.Page.User.IsInRole("User") || !this.Page.User.IsInRole("Admin"))
+            {
+                this.createStory.Visible = false;
+            }
+
             if (!IsPostBack)
             {
                 // Set Anti-XSRF token

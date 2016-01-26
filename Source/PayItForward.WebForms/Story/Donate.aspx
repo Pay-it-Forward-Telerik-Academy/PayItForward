@@ -50,7 +50,7 @@
 
         <div class="card col s6 card-panel z-depth-4">
             <div class="card-image">
-                <img id="storyImage" runat="server" alt="sample image">
+                <img id="storyImage" runat="server" alt="sample image"/>
 
                 <span runat="server" class="card-title" id="cardTitle"></span>
             </div>
@@ -66,7 +66,7 @@
                 <div class="determinate" id="progressBar" runat="server"></div>
             </div>
             <div class="card-action">
-                <a href="#">This is a link</a>
+                <a runat="server" id="storyDetails">Details</a>
             </div>
         </div>
     </div>

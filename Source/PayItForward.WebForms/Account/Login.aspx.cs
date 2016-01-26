@@ -21,12 +21,10 @@ namespace PayItForward.WebForms.Account
             var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
             if (!String.IsNullOrEmpty(returnUrl))
             {
-                // this.Response.Redirect("~/ErrorPages/Forbidden");
-                //Response.StatusCode = 403;
-                //Response.Flush();
-                throw new HttpException(403, "Forbidden request for " + Server.UrlDecode(returnUrl));
-                //throw new HttpException(403, "Test");
-                //RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
+                if (!returnUrl.Contains("Profile") && !returnUrl.Contains("ManagePassword"))
+                {
+                    throw new HttpException(403, "Forbidden request for " + Server.UrlDecode(returnUrl));
+                }
             }
         }
 
