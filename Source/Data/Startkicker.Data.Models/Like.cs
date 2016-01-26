@@ -1,14 +1,8 @@
-﻿using System;
-
-namespace PayItForward.Data.Models
+﻿namespace PayItForward.Data.Models
 {
-    public class Comment
+    public class Like
     {
         public int Id { get; set; }
-
-        public bool IsRemoved { get; set; }
-
-        public string Context { get; set; }
 
         public int StoryId { get; set; }
 
@@ -17,7 +11,5 @@ namespace PayItForward.Data.Models
         public string UserId { get; set; }
 
         public virtual User User { get; set; }
-
-        public DateTime CreatedOn { get; set; }
     }
 }

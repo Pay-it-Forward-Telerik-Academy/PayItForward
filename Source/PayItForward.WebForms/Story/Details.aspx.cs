@@ -14,6 +14,8 @@ namespace PayItForward.WebForms.Story
         public IStoryService stories { get; set; }
         [Inject]
         public ICommentsService comments { get; set; }
+        [Inject]
+        public ILikesService likesService { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,9 +31,9 @@ namespace PayItForward.WebForms.Story
                 this.storyTitle.InnerText = story.Title;
                 this.imageStory.ImageUrl = story.ImageUrl;
                 this.storyDescription.InnerText = story.Description;
-                this.likes.InnerText = story.Likes.ToString();
+                this.likes.InnerText = story.Likes.Count().ToString();
 
-                this.CommentsRepeater.DataSource = story.Comments.ToList();
+                this.CommentsRepeater.DataSource = this.comments.GetAllByStoryIdOrderedByDate(storyId);
                 this.CommentsRepeater.DataBind();
 
                 var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
@@ -51,7 +53,7 @@ namespace PayItForward.WebForms.Story
             int.TryParse(Request.QueryString["id"], out storyId);
             this.comments.Add(User.Identity.GetUserId(), storyId, this.comment.Value.ToString());
             var story = stories.GetById(storyId);
-            this.CommentsRepeater.DataSource = story.Comments.ToList();
+            this.CommentsRepeater.DataSource = this.comments.GetAllByStoryIdOrderedByDate(storyId);
             this.CommentsRepeater.DataBind();
         }
 
@@ -60,8 +62,10 @@ namespace PayItForward.WebForms.Story
             int storyId;
 
             int.TryParse(Request.QueryString["id"], out storyId);
-            var story = this.stories.AddLike(storyId);
-            this.likes.InnerText = story.Likes.ToString();
+
+            this.likesService.AddLike(storyId, this.User.Identity.GetUserId());
+            var story = this.stories.GetById(storyId);
+            this.likes.InnerText = story.Likes.Count().ToString();
         }
 
         protected double CalculatePercentage(double collected, double goal)

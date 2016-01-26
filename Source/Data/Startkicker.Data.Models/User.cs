@@ -18,11 +18,14 @@
 
         private ICollection<Comment> comments;
 
+        private ICollection<Like> likes;
+
         public User()
         {
             this.donations = new HashSet<Donation>();
             this.stories = new HashSet<Story>();
             this.comments = new HashSet<Comment>();
+            this.likes = new HashSet<Like>();
         }
 
         [MaxLength(50)]
@@ -74,6 +77,19 @@
             set
             {
                 this.comments = value;
+            }
+        }
+
+        public virtual ICollection<Like> Likes
+        {
+            get
+            {
+                return this.likes;
+            }
+
+            set
+            {
+                this.likes = value;
             }
         }
         public ClaimsIdentity GenerateUserIdentity(UserManager<User> manager)

@@ -29,7 +29,5 @@
         void Save();
 
         int Count();
-
-        Story AddLike(int storyId);
     }
 }
