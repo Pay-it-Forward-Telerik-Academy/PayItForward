@@ -24,7 +24,7 @@ namespace PayItForward.WebForms.Account
                 // this.Response.Redirect("~/ErrorPages/Forbidden");
                 //Response.StatusCode = 403;
                 //Response.Flush();
-                throw new HttpException(403, "Test");
+                throw new HttpException(403, "Forbidden request for " + Server.UrlDecode(returnUrl));
                 //throw new HttpException(403, "Test");
                 //RegisterHyperLink.NavigateUrl += "?ReturnUrl=" + returnUrl;
             }
