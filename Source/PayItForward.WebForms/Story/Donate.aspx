@@ -38,33 +38,45 @@
                         <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                         <label for="email">Your Email</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                           ForeColor="Red" ErrorMessage="The email field is required." />
+                            ForeColor="Red" ErrorMessage="The email field is required." />
                     </div>
                 </div>
-
-                <div class="center">
-                    <asp:Button runat="server" OnClick="CreateDonation" Text="Donate" CssClass="waves-effect waves-light btn" />
-                </div>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server" class="panel"
+                    UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <div class="center">
+                            <asp:Button runat="server" OnClick="CreateDonation" Text="Donate" CssClass="waves-effect waves-light btn" />
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
             </div>
         </div>
 
         <div class="card col s6 card-panel z-depth-4">
             <div class="card-image">
-                <img id="storyImage" runat="server" alt="sample image"/>
+                <img id="storyImage" runat="server" alt="sample image" />
 
                 <span runat="server" class="card-title" id="cardTitle"></span>
             </div>
             <div class="card-content">
                 <p runat="server" id="Description"></p>
             </div>
-            <div class="center">
-                <span id="collectedAmount" runat="server"></span>
-                <span> of </span>
-                <span id="goalAmount" runat="server"></span>
-            </div>
-            <div class="progress">
-                <div class="determinate" id="progressBar" runat="server"></div>
-            </div>
+            <asp:UpdatePanel ID="ProgressPanel" runat="server" class="panel"
+                UpdateMode="Conditional">
+                <ContentTemplate>
+                    <div class="center">
+                        <span id="collectedAmount" runat="server"></span>
+                        <span>of </span>
+                        <span id="goalAmount" runat="server"></span>
+                    </div>
+
+
+                    <div class="progress">
+                        <div class="determinate" id="progressBar" runat="server"></div>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
             <div class="card-action">
                 <a runat="server" id="storyDetails">Details</a>
             </div>

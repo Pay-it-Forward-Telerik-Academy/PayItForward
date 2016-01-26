@@ -32,12 +32,12 @@ namespace PayItForward.WebForms
 
                 if (int.TryParse(Request.QueryString["id"], out storyId))
                 {
-                    
+
 
                     var story = this.stories.GetById(storyId);
                     this.DropDownListCountries.DataSource = countries;
                     this.DropDownListCountries.DataBind();
-                    this.storyDetails.HRef = "Story/Details?id=" + story.Id;
+                    this.storyDetails.HRef = "/Story/Details?id=" + story.Id;
 
                     this.Username.Enabled = false;
                     this.Email.Enabled = false;
@@ -66,11 +66,19 @@ namespace PayItForward.WebForms
 
         protected void CreateDonation(object sender, EventArgs e)
         {
-            Notifier notifier = new Notifier();
-            notifier.Message("You donate successful!");
-            int storyId;
-            int.TryParse(Request.QueryString["id"], out storyId);
+            int storyId = int.Parse(Request.QueryString["id"]);
+            var story = this.stories.GetById(storyId);
             this.donations.Add(User.Identity.GetUserId(), storyId, int.Parse(this.Amount.Text), this.DropDownListCountries.SelectedItem.Text);
+            var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
+            this.collectedAmount.InnerText = "$" + story.CollectedAmount.ToString();
+            this.goalAmount.InnerText = "$" + story.GoalAmount.ToString();
+
+            this.progressBar.Style.Add("width", percentage.ToString() + "%");
+            //this.ProgressPanel.Update();
+            //Notifier notifier = new Notifier();
+            //notifier.Message("You donate successful!");
+
+
         }
 
         protected double CalculatePercentage(double collected, double goal)

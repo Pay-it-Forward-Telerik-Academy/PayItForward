@@ -49,6 +49,15 @@ namespace PayItForward.WebForms {
         protected global::System.Web.UI.WebControls.TextBox Email;
         
         /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// storyImage control.
         /// </summary>
         /// <remarks>
@@ -74,6 +83,15 @@ namespace PayItForward.WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Description;
+        
+        /// <summary>
+        /// ProgressPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel ProgressPanel;
         
         /// <summary>
         /// collectedAmount control.
