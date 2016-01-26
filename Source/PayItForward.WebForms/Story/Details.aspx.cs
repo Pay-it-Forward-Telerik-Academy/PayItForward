@@ -33,7 +33,7 @@ namespace PayItForward.WebForms.Story
                 this.storyDescription.InnerText = story.Description;
                 this.likes.InnerText = story.Likes.Count().ToString();
 
-                this.CommentsRepeater.DataSource = story.Comments.ToList();
+                this.CommentsRepeater.DataSource = this.comments.GetAllByStoryIdOrderedByDate(storyId);
                 this.CommentsRepeater.DataBind();
 
                 var percentage = this.CalculatePercentage(story.CollectedAmount, story.GoalAmount);
@@ -53,7 +53,7 @@ namespace PayItForward.WebForms.Story
             int.TryParse(Request.QueryString["id"], out storyId);
             this.comments.Add(User.Identity.GetUserId(), storyId, this.comment.Value.ToString());
             var story = stories.GetById(storyId);
-            this.CommentsRepeater.DataSource = story.Comments.ToList();
+            this.CommentsRepeater.DataSource = this.comments.GetAllByStoryIdOrderedByDate(storyId);
             this.CommentsRepeater.DataBind();
         }
 

@@ -33,7 +33,7 @@
                             <span class="activator white-text text-darken-2 btn-floating waves-effect waves-light right">View</span>
                         </div>
                     </div>
-                    <div class="card-reveal" style="display: none; overflow:hidden; transform: translateY(0px);">
+                    <div class="card-reveal" style="display: none; overflow: hidden; transform: translateY(0px);">
                         <span class="card-title grey-text text-darken-4">Comments<i class="material-icons right">close</i></span>
                         <asp:UpdatePanel ID="UpdatePanelFavoriteDrink" runat="server" style="max-height: 60%; overflow-y: scroll; overflow-x: hidden;" class="panel"
                             UpdateMode="Conditional">
@@ -47,6 +47,7 @@
                                                         <span class="tip tip-up"></span>
                                                         <div class="message">
                                                             <span><%#: Eval("Context") %></span>
+                                                            <span><%#Eval("CreatedOn") %></span>
                                                         </div>
                                                     </div>
                                                 </div>

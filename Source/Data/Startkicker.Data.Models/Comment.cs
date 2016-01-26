@@ -1,4 +1,6 @@
-﻿namespace PayItForward.Data.Models
+﻿using System;
+
+namespace PayItForward.Data.Models
 {
     public class Comment
     {
@@ -15,5 +17,7 @@
         public string UserId { get; set; }
 
         public virtual User User { get; set; }
+
+        public DateTime CreatedOn { get; set; }
     }
 }
