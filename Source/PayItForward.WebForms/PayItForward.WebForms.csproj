@@ -548,12 +548,12 @@
       <Project>{40c88247-eb1f-4393-8ce5-0e38bb1eb8cf}</Project>
       <Name>PayItForward.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data\Startkicker.Data.Models\PayItForward.Data.Models.csproj">
+    <ProjectReference Include="..\Data\PayItForward.Data.Models\PayItForward.Data.Models.csproj">
       <Project>{74c0976c-f6ce-4d7d-a997-9d218cd18028}</Project>
       <Name>PayItForward.Data.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data\Startkicker.Data\PayItForward.Data.csproj">
-      <Project>{292B6628-C1BD-4F14-B5EA-AC06FB53296C}</Project>
+    <ProjectReference Include="..\Data\PayItForward.Data\PayItForward.Data.csproj">
+      <Project>{292b6628-c1bd-4f14-b5ea-ac06fb53296c}</Project>
       <Name>PayItForward.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Services\PayItForward.Services.Data\PayItForward.Services.Data.csproj">

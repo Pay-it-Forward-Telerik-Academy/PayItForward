@@ -110,7 +110,7 @@
             if (sort == "latest")
                 return Stories.GetAll().OrderByDescending(x => x.PostDate);
             if (sort == "popular")
-                return Stories.GetAll().OrderByDescending(x => x.Likes);
+                return Stories.GetAll().OrderByDescending(x => x.Likes.Count);
             if (sort == "almost")
                 return Stories.GetAll().OrderBy(x => x.GoalAmount - x.CollectedAmount);
             if (sort == "critical")

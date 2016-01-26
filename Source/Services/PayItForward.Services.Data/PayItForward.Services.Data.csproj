@@ -102,18 +102,18 @@
     <Compile Include="UsersService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Data\Startkicker.Data.Models\PayItForward.Data.Models.csproj">
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\PayItForward.Data.Models\PayItForward.Data.Models.csproj">
       <Project>{74c0976c-f6ce-4d7d-a997-9d218cd18028}</Project>
       <Name>PayItForward.Data.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Data\Startkicker.Data\PayItForward.Data.csproj">
+    <ProjectReference Include="..\..\Data\PayItForward.Data\PayItForward.Data.csproj">
       <Project>{292b6628-c1bd-4f14-b5ea-ac06fb53296c}</Project>
       <Name>PayItForward.Data</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
