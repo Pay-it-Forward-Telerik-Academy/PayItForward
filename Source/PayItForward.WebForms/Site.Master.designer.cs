@@ -40,6 +40,24 @@ namespace PayItForward.WebForms {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor admin;
         
         /// <summary>
+        /// A1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
+        
+        /// <summary>
+        /// a2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor a2;
+        
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

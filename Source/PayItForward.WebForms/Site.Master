@@ -53,16 +53,23 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper  green accent-2">
-                        <a href="#" class="brand-logo center">Pay It Forward</a>
-                        <ul id="nav-mobile" class="left">
+                        <a href="/" class="brand-logo center">Pay It Forward</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
                             <li><a runat="server" href="~/">Home</a></li>
                             <li><a runat="server" id="createStory" href="~/Story/Create">Create Story</a></li>
                             <li><a runat="server" href="~/About">About</a></li>
                             <li><a runat="server" id="admin" href="~/Administration/AdminPanel">Admin</a></li>
                         </ul>
+                         <ul class="side-nav right" id="mobile-demo">
+                             <li><a runat="server" href="~/">Home</a></li>
+                            <li><a runat="server" id="A1" href="~/Story/Create">Create Story</a></li>
+                            <li><a runat="server" href="~/About">About</a></li>
+                            <li><a runat="server" id="a2" href="~/Administration/AdminPanel">Admin</a></li>
+                         </ul>
                         <asp:LoginView runat="server" ViewStateMode="Disabled">
                             <AnonymousTemplate>
-                                <ul class="right hide-on-med-and-down">
+                                <ul class="right">
                                     <li><a runat="server" href="~/Account/Register">Register</a></li>
                                     <li><a runat="server" href="~/Account/Login">Log in</a></li>
                                 </ul>
@@ -106,6 +113,12 @@
             </div>
         </form>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+        </script>
 </body>
 </html>
