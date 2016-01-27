@@ -56,6 +56,16 @@
                                 </asp:LinkButton>
                                 </div>
                             </div>
+                           <div class="row" id="search-row">
+                            <div class="input-field col offset-s2 s6">
+                                <i class="mdi-action-search prefix"></i>
+                                <asp:TextBox runat="server" ID="Search" CssClass="" TextMode="SingleLine" />
+                                <label for="Search">Search</label>
+                            </div>
+                            <div class="col s2">
+                                <asp:Button runat="server" ID="btnSearch" Text="Search" OnClick="btnSearch_OnClick" CssClass="btn btn-search deep-purple lighten-2"/>
+                            </div>
+                        </div>
                         </div>
                     <div class="row">
                         <div class="col s12">

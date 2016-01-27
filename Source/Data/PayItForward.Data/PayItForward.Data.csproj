@@ -73,7 +73,7 @@
       <Project>{40c88247-eb1f-4393-8ce5-0e38bb1eb8cf}</Project>
       <Name>PayItForward.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Startkicker.Data.Models\PayItForward.Data.Models.csproj">
+    <ProjectReference Include="..\PayItForward.Data.Models\PayItForward.Data.Models.csproj">
       <Project>{74c0976c-f6ce-4d7d-a997-9d218cd18028}</Project>
       <Name>PayItForward.Data.Models</Name>
     </ProjectReference>

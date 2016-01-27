@@ -75,10 +75,8 @@ namespace PayItForward.WebForms
 
             this.progressBar.Style.Add("width", percentage.ToString() + "%");
             this.ProgressPanel.Update();
-            //Notifier notifier = new Notifier();
-            //notifier.Message("You donate successful!");
-
-
+            Notifier notifier = new Notifier();
+            notifier.Message("You donate successful!");
         }
 
         protected double CalculatePercentage(double collected, double goal)

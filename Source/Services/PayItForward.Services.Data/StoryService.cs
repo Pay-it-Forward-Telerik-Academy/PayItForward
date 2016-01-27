@@ -36,7 +36,7 @@
 
         public IQueryable<Story> GetAll()
         {
-            return this.storyRepo.All().Where(x => (!x.IsRemoved)).ToList().AsQueryable();
+            return this.storyRepo.All().Where(x => (!x.IsRemoved) && x.IsAccept).ToList().AsQueryable();
 
         }
 
