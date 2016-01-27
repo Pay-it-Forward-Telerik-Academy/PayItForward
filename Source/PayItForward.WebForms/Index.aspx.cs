@@ -1,10 +1,7 @@
 ﻿namespace PayItForward.WebForms.Home
 {
     using System;
-    using System.Collections.Generic;
-    using System.Data.Entity;
     using System.Linq;
-    using System.Web;
     using System.Web.UI;
     using System.Web.UI.WebControls;
     using Ninject;
@@ -30,7 +27,7 @@
 
                 var categories = Categories.GetAll().ToList();
 
-                this.lvStories.DataSource = stories.ToList();
+                this.lvStories.DataSource = CheckForTitleSearch(stories).ToList();
                 this.lvStories.DataBind();
 
                 this.CategoriesMenu.DataSource = categories;
@@ -116,6 +113,43 @@
             if (sort == "critical")
                 return Stories.GetAll().OrderByDescending(x => (x.GoalAmount - x.CollectedAmount) / ((x.ExpirationDate - DateTime.Now).TotalDays));
             return Stories.GetAll();
+        }
+
+
+        protected void btnSearch_OnClick(object sender, EventArgs e)
+        {
+            var parameter = ((TextBox)lvStories.FindControl("Search")).Text;
+            var url = this.Request.Url.ToString();
+
+            if (this.Request.QueryString.Count == 0)
+            {
+                url += "?search=" + parameter;
+            }
+            else
+            {
+                if (this.Request.QueryString["search"] == null)
+                {
+                    url += "&search=" + parameter;
+                }
+                else
+                {
+                    var partial = url.Substring(0, url.IndexOf("search"));
+                    url = partial  + "search=" + parameter;
+                }
+            }
+
+            this.Response.Redirect(url);
+        }
+
+        private IQueryable<Story> CheckForTitleSearch(IQueryable<Story> list)
+        {
+            string parameter;
+            if ((parameter = Request.QueryString["search"]) != null)
+            {
+                list = list.Where(x => x.Title.Contains(parameter));
+            }
+
+            return list;
         }
     }
 }
