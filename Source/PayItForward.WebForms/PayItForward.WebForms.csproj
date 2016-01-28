@@ -208,7 +208,6 @@
     <Content Include="Administration\StoriesApproval.aspx" />
     <Content Include="Administration\StoriesPanel.aspx" />
     <Content Include="Administration\UsersPanel.aspx" />
-    <Content Include="Content\test.css" />
     <Content Include="Controls\Notifier\Notifier.ascx" />
     <Content Include="ErrorPages\GenericErrorPage.aspx" />
     <Content Include="ErrorPages\HttpErrorPage.aspx" />
@@ -269,7 +268,9 @@
     <Content Include="Site.Master" />
     <Content Include="Story\Create.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />

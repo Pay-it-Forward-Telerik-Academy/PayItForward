@@ -81,7 +81,7 @@
                                         <ul id="profile-dropdown" class="dropdown-content active" style="width: 128px; position: absolute; top: 57px; left: 101.234px; opacity: 1; display: none;">
                                             <li><a runat="server" href="~/Account/Profile"><i class="mdi-action-face-unlock"></i>Profile</a>
                                             </li>
-                                            <li><a runat="server" href="~/Account/Manage"><i class="mdi-action-settings"></i>Manage</a>
+                                            <li><a runat="server" href="~/Account/ManagePassword"><i class="mdi-action-settings"></i>Manage</a>
                                             </li>
                                             <li>
                                                 <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
