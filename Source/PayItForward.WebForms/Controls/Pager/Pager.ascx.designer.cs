@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PayItForward.WebForms.Administration {
+namespace PayItForward.WebForms.Controls.Pager {
     
     
-    public partial class UsersPanel {
+    public partial class Pager {
         
         /// <summary>
-        /// UpdateGridPanel control.
+        /// ddlPageNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdateGridPanel;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPageNumber;
         
         /// <summary>
-        /// GridViewUsers control.
+        /// lblShowRecords control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewUsers;
+        protected global::System.Web.UI.WebControls.Label lblShowRecords;
         
         /// <summary>
-        /// custPager control.
+        /// ddlPageSize control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::PayItForward.WebForms.Controls.Pager.Pager custPager;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPageSize;
     }
 }

@@ -33,6 +33,7 @@
                 this.CategoriesMenu.DataSource = categories;
                 this.CategoriesMenu.DataBind();
             }
+            
         }
 
         protected void OnLatestStoryButtonClicked(object sender, EventArgs e)
@@ -101,6 +102,8 @@
 
             return list;
         }
+
+
 
         private IQueryable<Story> SetSortByType(string sort)
         {

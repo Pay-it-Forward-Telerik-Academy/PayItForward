@@ -5,6 +5,7 @@
     using PayItForward.Data.Models;
     using Ninject;
     using PayItForward.Services.Data.Contracts;
+    using Controls.Pager.CustomDelegates;
 
     public partial class StoriesPanel : System.Web.UI.Page
     {
@@ -13,8 +14,22 @@
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                int totalPages = this.stories.GetAll().Count();
+                custlinkPager.TotalPages = totalPages % GridViewStories.PageSize == 0 ? totalPages / GridViewStories.PageSize : totalPages / GridViewStories.PageSize + 1;
+            }
 
         }
+
+        protected void custLinkPager_PageChanged(object sender, CustomPageChangeArgs e)
+        {
+            int totalPages = this.stories.GetAll().Count();
+            custlinkPager.TotalPages = totalPages % GridViewStories.PageSize == 0 ? totalPages / GridViewStories.PageSize : totalPages / GridViewStories.PageSize + 1;
+            GridViewStories.PageIndex = e.CurrentPageNumber -1;
+
+        }
+
 
         public IQueryable<Story> GridViewStories_GetData()
         {

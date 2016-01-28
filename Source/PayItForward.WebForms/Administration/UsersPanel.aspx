@@ -1,7 +1,10 @@
-﻿<%@ Page Title="" Language="C#" 
+﻿<%@ Page Title="" Language="C#"
     MasterPageFile="~/Administration/Administration.master"
-     AutoEventWireup="true" CodeBehind="UsersPanel.aspx.cs" 
+    AutoEventWireup="true" CodeBehind="UsersPanel.aspx.cs"
     Inherits="PayItForward.WebForms.Administration.UsersPanel" %>
+
+<%@ Register Src="~/Controls/Pager/Pager.ascx" TagPrefix="custom" TagName="Pager" %>
+
 
 <asp:Content ID="UserContent" ContentPlaceHolderID="AdminContent" runat="server">
     <asp:UpdatePanel runat="server" ID="UpdateGridPanel">
@@ -12,7 +15,7 @@
                 UpdateMethod="GridViewUsers_UpdateItem"
                 DeleteMethod="GridViewUsers_DeleteItem"
                 ItemType="PayItForward.Data.Models.User"
-                AllowPaging="True"
+                AllowPaging="True" PagerSettings-Visible="false"
                 PageSize="5"
                 AllowSorting="True"
                 DataKeyNames="Id"
@@ -28,5 +31,18 @@
             </asp:GridView>
         </ContentTemplate>
     </asp:UpdatePanel>
-
+    <div class="row">
+        <div class="col s6">
+            <custom:Pager ID="custPager" runat="server" OnPageChanged="custPager_PageChanged" />
+        </div>
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
 </asp:Content>
