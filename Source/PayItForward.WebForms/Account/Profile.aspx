@@ -31,7 +31,7 @@
                         SelectMethod="GridViewDonations_GetData"
                         ItemType="PayItForward.Data.Models.Donation"
                         AllowPaging="True"
-                        PageSize="5"
+                        PageSize="3"
                         AllowSorting="True"
                         DataKeyNames="Id"
                         MultipleActiveResultSets="true"

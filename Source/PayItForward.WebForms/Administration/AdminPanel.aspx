@@ -1,4 +1,6 @@
-﻿<%@ Page Title="" Language="C#"
+﻿<%@ OutputCache Duration="3000" VaryByParam="*" %>
+
+<%@ Page Title="" Language="C#"
     MasterPageFile="~/Administration/Administration.master"
     AutoEventWireup="true" CodeBehind="AdminPanel.aspx.cs"
     Inherits="PayItForward.WebForms.Administration.AdminPanel" %>
@@ -10,7 +12,7 @@
                 <div class="card center">
                     <div class="card-content  green white-text">
                         <p class="card-stats-title center"><i class="mdi-social-group-add"></i>New Users</p>
-                        <h4 class="card-stats-number" id="usersCount" runat="server">566</h4>
+                        <h4 class="card-stats-number" id="usersCount" runat="server"></h4>
                         <p class="card-stats-compare">
                             <i class="mdi-hardware-keyboard-arrow-up"></i>15% <span class="green-text text-lighten-5">from yesterday</span>
                         </p>
@@ -21,7 +23,7 @@
                 <div class="card center">
                     <div class="card-content  purple white-text">
                         <p class="card-stats-title center"><i class="mdi-editor-insert-drive-file"></i>New Stories</p>
-                        <h4 class="card-stats-number" id="storiesCount" runat="server">100</h4>
+                        <h4 class="card-stats-number" id="storiesCount" runat="server"></h4>
                         <p class="card-stats-compare center">
                             <i class="mdi-hardware-keyboard-arrow-up"></i>5% <span class="green-text text-lighten-5">from yesterday</span>
                         </p>
@@ -32,7 +34,7 @@
                 <div class="card center">
                     <div class="card-content blue-grey white-text">
                         <p class="card-stats-title center"><i class="mdi-action-trending-up"></i>New Donation</p>
-                        <h4 class="card-stats-number" id="donationCount" runat="server">345</h4>
+                        <h4 class="card-stats-number" id="donationCount" runat="server"></h4>
                         <p class="card-stats-compare">
                             <i class="mdi-hardware-keyboard-arrow-up"></i>12% <span class="green-text text-lighten-5">from yesterday</span>
                         </p>

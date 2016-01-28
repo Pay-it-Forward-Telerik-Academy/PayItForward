@@ -56,6 +56,16 @@
                                 </asp:LinkButton>
                                 </div>
                             </div>
+                           <div class="row" id="search-row">
+                            <div class="input-field col offset-s2 s6">
+                                <i class="mdi-action-search prefix"></i>
+                                <asp:TextBox runat="server" ID="Search" CssClass="" TextMode="SingleLine" />
+                                <label for="Search">Search</label>
+                            </div>
+                            <div class="col s2">
+                                <asp:LinkButton runat="server" ID="btnSearch" Text="Search" OnClick="btnSearch_OnClick" CssClass="btn btn-search deep-purple lighten-2"/>
+                            </div>
+                        </div>
                         </div>
                     <div class="row">
                         <div class="col s12">
@@ -89,7 +99,6 @@
                     </div>
                 </GroupTemplate>
                 <ItemTemplate>
-
                     <%--<%#  (Container.ItemIndex == 0 || (Container.ItemIndex +1 ) % 3 == 1) ? @"<div class='row'>":"" %>--%>
                     <div id="profile-card" class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -131,15 +140,17 @@
                                 <span>$<%#: Eval("GoalAmount") %></span>
                             </div>
                             <div class="progress">
-                                <div class="determinate" <%#: "style= width:" +  (((double)Eval("CollectedAmount")/(double)Eval("GoalAmount"))*100) + "%;"%>"></div>
+                                <div class="determinate" <%#: "style= width:" +  (((double)Eval("CollectedAmount")/(double)Eval("GoalAmount"))*100) + "%;"%>></div>
                             </div>
                             <p>
                         </div>
                     </div>
                 </ItemTemplate>
                 <EmptyDataTemplate>
-                    No stories available at this moment!
-                    </EmptyDataTemplate>
+                    <div class="card-panel hoverable center">
+                        <img src="http://www.webiners.com/static/img/commons/no_results2.png"/>
+                    </div>
+                </EmptyDataTemplate>
             </asp:ListView>
         </div>
     </div>
