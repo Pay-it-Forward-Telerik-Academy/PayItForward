@@ -1,6 +1,6 @@
 # PayItForward
 Crowdfunding for Everyone - a team project for Telerik Software Academy's ASP.NET Web Forms course
-# Team-DON'T.NET
+#	Don`t NET WEB Forms
 ---
 
 ## Team Members
