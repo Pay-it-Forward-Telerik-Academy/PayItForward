@@ -19,7 +19,7 @@
                                     <asp:LinkButton ID="likeButton" OnClick="OnAddLike"
                                         runat="server">
                                         <span class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
-                                            <i class="mdi-action-favorite" style="position: relative"></i><small id="likes" runat="server" style="position: absolute; left: 11px; top: 1px; color: #26A69A;">10</small>
+                                            <i class="mdi-action-favorite" style="position: relative"></i><small id="likes" runat="server" style="position: absolute; left: 15px; top: 1px; color: #26A69A;">10</small>
                                         </span>
                                     </asp:LinkButton>
                                 </div>

@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="center">
-                    <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="waves-effect waves-light btn" />
+                    <asp:Button runat="server" OnClientClick="Materialize.toast('You register successfully!', 2000)" OnClick="CreateUser_Click" Text="Register" CssClass="waves-effect waves-light btn" />
                 </div>
             </div>
         </div>

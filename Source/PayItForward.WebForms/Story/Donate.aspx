@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">payment</i>
-                        <asp:TextBox runat="server" ID="Amount" TextMode="Number" row="3" />
+                        <asp:TextBox runat="server" ID="Amount" TextMode="Number" min="0" row="3" />
                         <label for="Amount">Enter your donation</label>
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Amount"
                             ForeColor="Red" ErrorMessage="You must fill amout field." />

@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col offset-s2 s8 input-field">
                             <i class="material-icons prefix">payment</i>
-                            <asp:TextBox runat="server" ID="GoalAmount" CssClass="form-control" Placeholder="Enter a goal amount(required)" TextMode="Number" />
+                            <asp:TextBox runat="server" ID="GoalAmount" CssClass="form-control" Placeholder="Enter a goal amount(required)" min="0" TextMode="Number" />
                             <label for="email">Goal Amount</label>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="GoalAmount"
                                 CssClass="text-danger" ErrorMessage="Please specify goal amount of the story!" />
@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col offset-s2 s8 input-field">
                             <i class="mdi-notification-event-available prefix"></i>
-                            <asp:TextBox runat="server" ID="EstimatedDays" CssClass="form-control" Placeholder="Enter a EstimatedDays" TextMode="Number" />
+                            <asp:TextBox runat="server" ID="EstimatedDays" CssClass="form-control" Placeholder="Enter a EstimatedDays" min="1" TextMode="Number" />
                             <label for="email">Estimated Days</label>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="EstimatedDays"
                                 CssClass="text-danger" ErrorMessage="Please specify goal amount of the story!" />

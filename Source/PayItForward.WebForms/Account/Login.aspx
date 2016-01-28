@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="center">
-                            <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="waves-effect waves-light btn" />
+                            <asp:Button runat="server" OnClientClick="Materialize.toast('You login successfully!', 2000)" OnClick="LogIn" Text="Log in" CssClass="waves-effect waves-light btn" />
                         </div>
                     </div>
                     <p>
