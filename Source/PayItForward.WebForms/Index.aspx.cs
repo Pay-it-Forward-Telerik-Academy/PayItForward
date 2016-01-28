@@ -116,7 +116,7 @@
         }
 
 
-        protected void btnSearch_OnClick(object sender, EventArgs e)
+        public void btnSearch_OnClick(object sender, EventArgs e)
         {
             var parameter = ((TextBox)lvStories.FindControl("Search")).Text;
             var url = this.Request.Url.ToString();
