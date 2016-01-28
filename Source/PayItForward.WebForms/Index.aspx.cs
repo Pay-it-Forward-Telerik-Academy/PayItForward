@@ -36,6 +36,7 @@
                 this.CategoriesMenu.DataSource = categories;
                 this.CategoriesMenu.DataBind();
             }
+            
         }
 
         protected void OnLatestStoryButtonClicked(object sender, EventArgs e)
@@ -105,6 +106,8 @@
             return list;
         }
 
+
+
         private IQueryable<Story> SetSortByType(string sort)
         {
             if (sort == "latest")
@@ -116,6 +119,16 @@
             if (sort == "critical")
                 return Stories.GetAll().OrderByDescending(x => (x.GoalAmount - x.CollectedAmount) / ((x.ExpirationDate - DateTime.Now).TotalDays));
             return Stories.GetAll();
+        }
+
+        private IQueryable<Story> SearchString(string search, IQueryable<Story> list)
+        {
+            string searchString;
+            if ((searchString = Request.QueryString["Search"])!=null)
+            {
+                list = list.Where(x => x.Title.Contains(searchString));
+            }
+            return list;
         }
     }
 }

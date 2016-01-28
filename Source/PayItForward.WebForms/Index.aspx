@@ -1,5 +1,4 @@
-﻿<%@ OutputCache Duration="3000" VaryByParam="*" %>
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" MasterPageFile="~/Site.Master" Inherits="PayItForward.WebForms.Home.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" MasterPageFile="~/Site.Master" Inherits="PayItForward.WebForms.Home.Index" %>
 <%@ Import Namespace="PayItForward.Data.Models" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:HiddenField ID="SortType" runat="server" Value="" />
@@ -137,8 +136,10 @@
                             <p>
                         </div>
                     </div>
-
                 </ItemTemplate>
+                <EmptyDataTemplate>
+                    No stories available at this moment!
+                    </EmptyDataTemplate>
             </asp:ListView>
         </div>
     </div>
