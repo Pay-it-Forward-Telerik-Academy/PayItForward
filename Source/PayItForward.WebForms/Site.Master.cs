@@ -50,15 +50,16 @@ namespace PayItForward.WebForms
 
         protected void master_Page_PreLoad(object sender, EventArgs e)
         {
-
             if (!this.Page.User.IsInRole("Admin"))
             {
                 this.admin.Visible = false;
+                this.a2.Visible = false;
             }
 
             if (!this.Page.User.IsInRole("User") && !this.Page.User.IsInRole("Admin"))
             {
                 this.createStory.Visible = false;
+                this.A1.Visible = false;
             }
 
             if (!IsPostBack)
