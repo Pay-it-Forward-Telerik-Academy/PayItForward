@@ -4,7 +4,13 @@
 
     <siteMapNode url="~/" title="Index"  description="Index page!" />
     <siteMapNode url="~/About.aspx" title="About"  description="About page" />
-    <siteMapNode url="~/Account/Profile.aspx" title="Profile"  description="Profile page!" />
+    <siteMapNode title="Account">
+      <siteMapNode url="~/Account/Profile.aspx" title="Profile"  description="Profile page!" />
+      <siteMapNode url="~/Account/ManagePassword.aspx" title="Manage"  description="Manage page!" />
+      <siteMapNode url="~/Account/Register.aspx" title="Register"  description="Register page!" />
+      <siteMapNode url="~/Account/Login.aspx" title="Login"  description="Login page!" />
+    </siteMapNode>
+
 
   </siteMapNode>
 </siteMap>
