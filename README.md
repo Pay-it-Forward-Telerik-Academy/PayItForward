@@ -1,6 +1,6 @@
 # PayItForward
 Crowdfunding for Everyone - a team project for Telerik Software Academy's ASP.NET Web Forms course
-# Team-DON'T.NET
+#	Don`t NET WEB Forms
 ---
 
 ## Team Members
@@ -42,11 +42,12 @@ There’s no easier way to share your story and attract support.
  ## Error handling pages
 | Page | Description |
 |:----------:|:-------------|
-|/GenericErrorPage.aspx |  |
-|/HttpErrorPage.aspx |  |
-|/NotFoundErrorPage.aspx | |
+|HttpErrorPage.aspx | Generic page for http errors handling  |
+|NotFoundErrorPage.aspx | Not found page |
 
  ## User controls
-
+ - Notifier
+ - Pager
+ - Page link buttons
 
 ###### Telereik-Academy Season 2015-2016 
